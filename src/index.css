@@ -16,3 +16,14 @@
   font-family: "Lato", sans-serif;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #626262 !important;
+  font-weight: 500 !important;
+  
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+    height: 12px !important;
+}
