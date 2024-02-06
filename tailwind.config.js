@@ -20,6 +20,9 @@ export default withMT({
       fontFamily: {
         inter: ["Inter"],
         roboto: ["Roboto"]
+      },
+      colors: {
+        dark: "#0d1117"
       }
     },
   },
