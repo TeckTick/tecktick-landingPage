@@ -1,13 +1,31 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
+// module.exports = {
+//   content: [
     
-      "./src/**/*.{js,jsx,ts,tsx}",
+//       "./src/**/*.{js,jsx,ts,tsx}",
   
-  ],
+//   ],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// }
+
+import withMT from "@material-tailwind/react/utils/withMT";
+ 
+export default withMT({
+  content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ["Inter"],
+        roboto: ["Roboto"]
+      },
+      colors: {
+        dark: "#0d1117"
+      }
+    },
   },
   plugins: [],
-}
+});
 
