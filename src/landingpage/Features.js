@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-import React from 'react'
+
 =======
 import React, { useState } from "react";
 import { HiChevronDown } from "react-icons/hi";
