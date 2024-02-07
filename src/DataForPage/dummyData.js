@@ -1,6 +1,11 @@
 export const navbarData = [
-    {
-      id: "1",
+  {
+    id: "1",
+    name: "Portals",
+    link: "Portals",
+  },
+  {
+    id: "1",
       name: "About",
       link: "About",
     },

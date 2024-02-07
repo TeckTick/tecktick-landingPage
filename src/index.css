@@ -5,15 +5,117 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+    background-color: #2F007A;
+    height: 90vh;
+    color: aliceblue;
+}
+
+@layer utilities {
+    .pushable {
+        background: hsl(20deg, 100%, 32%);
+        border-radius: 25px;
+        border: none;
+        position: relative;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 0px;
+        box-sizing: 2px 2px 2px 2px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        outline-offset: 2px;
+
+    }
+    .front {
+        display: block;
+        padding: 18px 20px;
+        border-radius: 25px;
+        font-size: 1.15rem;
+        background: #95C6E4;
+        color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        transform: translateY(-6);
+    }
+}
+
+
+/* Navigation */
+
+.logo{
+    border-radius: 30%;
+}
 
 .w-full{
     justify-content: space-around;
-    padding: 4px;
+    padding: 2px;
     font-weight: bolder;
     text-transform: uppercase;
+    height: 10vh;
 }
 
 /* .w-full:hover{
     color: blue;
 } */
 
+/* Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+}
+
+.hero .header {
+    /* text-align: center; */
+    /* justify-content: center; */
+    
+}
+
+.PH{
+    background-color: #fff;
+    color: black;
+}
+
+.partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: '100px';
+    width: '25px';
+    text-align: 'center';
+    color: black;
+}
+
+.card {
+    /* display: flex; */
+    flex-direction: row;
+    /* margin-left: 6px; */
+    /* margin-right: 6px; */
+    padding-left: 20px;
+    padding-right: 16px;
+    /* padding-top: '80px'; */
+    background: '#52C0F5';
+    font-size: '12px',;
+    text-transform: 'uppercase';
+    /* background-color: red; */
+    
+    
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #95C6E4;
+}
+
+.container .con1 {
+    /* align-items: center; */
+    text-align: center;
+    background-color: red;
+}
