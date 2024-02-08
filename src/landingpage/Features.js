@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 import { HiChevronDown } from "react-icons/hi";
 
@@ -20,7 +22,7 @@ const FeatureContent = ({ tab, children }) => (
     <img
       src={`https://source.unsplash.com/random/300x300?${tab.name}`}
       alt={tab.name}
-      className="w-74 h-54 rounded-lg object-cover mb-4"
+      className="w-74 h-54 rounded-lg mb-4"
     />
     <div className="text-lg font-medium space-y-4">
       <h3 className="text-2xl font-bold">{tab.label}</h3>
