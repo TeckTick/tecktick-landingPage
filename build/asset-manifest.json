@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.532fcf38.css",
+    "main.js": "/static/js/main.50c4f645.js",
+    "static/js/592.988c54fd.chunk.js": "/static/js/592.988c54fd.chunk.js",
+    "static/media/tecktick.png": "/static/media/tecktick.0e2def6fbd6dd228bbbc.png",
+    "static/media/Avatar.png": "/static/media/Avatar.533e8683118e173ff71a.png",
+    "index.html": "/index.html",
+    "main.532fcf38.css.map": "/static/css/main.532fcf38.css.map",
+    "main.50c4f645.js.map": "/static/js/main.50c4f645.js.map",
+    "592.988c54fd.chunk.js.map": "/static/js/592.988c54fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.532fcf38.css",
+    "static/js/main.50c4f645.js"
+  ]
+}
