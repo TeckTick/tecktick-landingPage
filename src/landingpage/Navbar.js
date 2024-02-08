@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <div>
       <div>
-        <div className='flex flex-row justify-items-center items-center content-center w-full '>
+        <div className='flex flex-row justify-items-center items-center content-center nav-width '>
           <div> 
-            <img className="h-10 mx-2 my-2" src={logo} alt='logo-image'></img>
+            <img className="h-10 mx-2 my-2" src={logo} alt='logo-img'></img>
           </div>
           <div className='flex flex-row'>
             {navbarData.map((item) => {
