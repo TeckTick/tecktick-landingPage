@@ -5,117 +5,218 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-:root {
-    background-color: #2F007A;
-    height: 90vh;
-    color: aliceblue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reem Kufi", sans-serif !important;
 }
 
-@layer utilities {
-    .pushable {
-        background: hsl(20deg, 100%, 32%);
-        border-radius: 25px;
-        border: none;
-        position: relative;
-        color: #fff;
-        text-transform: uppercase;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        padding: 0px;
-        box-sizing: 2px 2px 2px 2px rgba(0, 0, 0, 0.12);
-        cursor: pointer;
-        outline-offset: 2px;
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-    }
-    .front {
-        display: block;
-        padding: 18px 20px;
-        border-radius: 25px;
-        font-size: 1.15rem;
-        background: #95C6E4;
-        color: #fff;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        transform: translateY(-6);
-    }
+.App {
+    min-height: 100vh;
+    width: 85vw;
+    max-width: 1900px;
+    margin: 0rem auto;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f6f6f6;
 }
 
 
-/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    min-height: 90px;
 
-.logo{
-    border-radius: 30%;
 }
 
-.w-full{
+nav img{
+    height: 50px;
+}
+
+  .navbar-menu-container {
+    display: none;
+  }
+  
+.navbar-links-container a {
+  margin-right: 3rem;
+   text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.primary-button {
+    padding: 0.9rem 1.75rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+  }
+
+  .navbar-cart-icon {
+    font-size: 1.15rem;
+  }
+  .primary-button:hover {
+    background-color: rgb(234, 234, 234);
+  }
+  .navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+ 
+
+  .home-image-section {
+    max-width: 600px;
+    flex: 1;
+  }
+  
+  .home-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .primary-heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #4c4c4c;
+    /* line-height: 5rem; */
+    max-width: 600px;
+  }
+  .primary-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: #6a6a6a;
+    margin: 1.5rem 0rem;
+  }
+  .secondary-button {
+    padding: 1rem 2.5rem;
+    background-color: #fe9e0d;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .secondary-button img {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+  }
+  .secondary-button:hover {
+    background-color: #e48f0f;
+  }
+  
+  /* PARTNER SECTION */
+  .partners-section{
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    padding: 2px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    height: 10vh;
-}
-
-/* .w-full:hover{
-    color: blue;
-} */
-
-/* Hero section */
-.hero {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 90vh;
-}
-
-.hero .header {
-    /* text-align: center; */
-    /* justify-content: center; */
+    height: 100px;
     
-}
-
-.PH{
-    background-color: #fff;
-    color: black;
-}
-
-.partner {
-    display: flex;
+  }
+  .horizontal-line {
+    width: 500px;
+    height: 5px;
     justify-content: center;
     align-items: center;
-    height: '100px';
-    width: '25px';
-    text-align: 'center';
-    color: black;
-}
+    background-color: black;
+  }
 
-.card {
-    /* display: flex; */
-    flex-direction: row;
-    /* margin-left: 6px; */
-    /* margin-right: 6px; */
-    padding-left: 20px;
-    padding-right: 16px;
-    /* padding-top: '80px'; */
-    background: '#52C0F5';
-    font-size: '12px',;
-    text-transform: 'uppercase';
-    /* background-color: red; */
-    
-    
-}
+  @media (max-width: 1000px) {
+    .navbar-links-container a {
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+    .primary-button {
+      font-size: 1rem;
+    }
+    .home-bannerImage-container {
+      max-width: 600px;
+    }
+  }
+  @media (max-width: 800px) {
+    .nav-logo-container {
+      max-width: 140px;
+    }
+    .navbar-links-container {
+      display: none;
+    }
+    .navbar-menu-container {
+      display: flex;
+    }
+    .home-bannerImage-container {
+      max-width: 450px;
+    }
+    .home-banner-container,
+    .about-section-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-section-container {
+      flex-direction: column;
+    }
+    .home-image-section,
+    .about-section-image-container {
+      width: 100%;
+      max-width: 400px;
+    }
+    .primary-heading {
+      text-align: center;
+      max-width: 90%;
+    }
+    .primary-text {
+      text-align: center;
+      max-width: 80%;
+    }
+    .home-text-section,
+    .about-section-text-container {
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+    .secondary-button {
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+      cursor: pointer;
+      justify-content: space-between;
+    }
+    .primary-subheading {
+      text-align: center;
+    }
+    .App {
+      max-width: 95vw;
+    }
+  }
+  @media (max-width: 600px) {
+    .home-bannerImage-container,
+    .about-background-image-container {
+      display: none;
+    }
+  }
 
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #95C6E4;
-}
-
-.container .con1 {
-    /* align-items: center; */
-    text-align: center;
-    background-color: red;
-}
