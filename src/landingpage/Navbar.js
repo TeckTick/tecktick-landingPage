@@ -48,21 +48,20 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className=''>
-      <div className='nav-logo-container'>
-        <img src={logo} alt='logo-image' />
-      </div>
-      <div className='navbar-links-container'>
-        <a href=''>Portals</a>
-        <a href=''>About</a>
-        <a href=''>Blog</a>
-        <a href=''>Gallery</a>
-        <a href=''>Sign In</a>
-        <a href=''><button className='primary-button'>Get Started</button></a>
-
-      </div>
-      <div className='navbar-menu-container'>
-        <HomeOutlinedIcon onClick={() => setOpenMenu(true)}/>
+    <div>
+      <div>
+        <div className='flex flex-row justify-items-center items-center content-center w-full '>
+          <div> 
+            <img className="h-10 mx-2 my-2" src={logo} alt='logo-image'></img>
+          </div>
+          <div className='flex flex-row'>
+            {navbarData.map((item) => {
+              return <div key={item.id}>
+                <Link to={item.link} spy={true} smooth={true} hashSpy={true} offset={50} duration={500} isDynamic={true} ignoreCancelEvents={false} spyThrottle={500} className='cursor-pointer text-dark font-inter text-lg font-medium tracking-tight py-1 px-2'>{item.name}</Link>
+              </div>
+            })}
+          </div>
+        </div>
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
         <Box sx={{ width: 250 }} role="presentation" onClick={() => setOpenMenu(false)} onKeyDown={() => setOpenMenu(false)}>
