@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
 
-  "homepage": "https://TeckTick.github.io/tecktick-landingPage",
+  "homepage": "https://tecktick.github.io/tecktick-landingPage",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

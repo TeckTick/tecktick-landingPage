@@ -1,4 +1,3 @@
-// src/components/Newsletter.js
 import React, { useState } from 'react';
 
 const Newsletter = () => {
