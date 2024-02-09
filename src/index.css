@@ -8,12 +8,12 @@
 
 
 
-.nav-width{
+.w-full{
     justify-content: space-around;
     padding: 4px;
     font-weight: bolder;
     text-transform: uppercase;
-} 
+}
 
 /* .w-full:hover{
     color: blue;
