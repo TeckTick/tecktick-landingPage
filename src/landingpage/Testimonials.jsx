@@ -24,6 +24,7 @@ const Testimonials = () => {
           spaceBetween={30}
           loop={true}
           draggable={true}
+          grabCursor={true}
           pagination={{
             clickable: true,
           }}
