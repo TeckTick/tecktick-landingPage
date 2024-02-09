@@ -14,8 +14,8 @@ import TestmonialCard from "../components/TestmonialCard";
 
 const Testimonials = () => {
   return (
-    <div className="bg-[#ECE4FF] flex flex-col items-center justify-center p-10 text-[#303030]">
-      <h1 className="font-montserrat font-medium text-[40px] text-[#4A4A68] mb-6">
+    <div className="bg-[#ECE4FF] flex flex-col items-center justify-center p-5 sm:p-10 text-[#303030]">
+      <h1 className="font-montserrat font-medium text-[40px] text-[#4A4A68] mb-6 text-center">
         Testimonials
       </h1>
       <div className="w-full  flex items-center justify-center">
@@ -23,6 +23,7 @@ const Testimonials = () => {
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
+          draggable={true}
           pagination={{
             clickable: true,
           }}
