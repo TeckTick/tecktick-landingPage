@@ -47,7 +47,7 @@ const Features = () => {
         </h2>
       </div>
       <div className="flex justify-center mt-8">
-        <nav className={`flex space-x-11 ${tabs.length > 2 ? 'flex-col' : 'flex-row'}`}>
+        <nav className={`flex space-x-11 ${tabs.length > 2 ? 'flex-col sm:flex-row' : 'flex-row'}`}>
           {tabs.map((tab) => (
             <button
               key={tab.name}
@@ -69,3 +69,5 @@ const Features = () => {
 };
 
 export default Features;
+
+
