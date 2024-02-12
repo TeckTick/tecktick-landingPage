@@ -8,12 +8,12 @@
 
 
 
-.nav-width{
+.w-full{
     justify-content: space-around;
     padding: 4px;
     font-weight: bolder;
     text-transform: uppercase;
-} 
+}
 
 /* .w-full:hover{
     color: blue;
@@ -50,4 +50,13 @@
 .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;
+}
+
+
+/* hide swiper buttons on small screens */
+@media (max-width: 950px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
 }
