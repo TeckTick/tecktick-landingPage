@@ -61,7 +61,7 @@ const Features = () => {
           ))}
         </nav>
       </div>
-      <div className="w-full mt-8 mx-auto max-w-lg flex flex-col items-center">
+      <div className="w-full mt-8 mx-auto max-w-lg flex flex-col items-center relative">
         {renderTabContent()}
       </div>
     </div>
