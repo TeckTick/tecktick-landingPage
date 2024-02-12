@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiChevronDown } from "react-icons/hi";
+
 
 
 const FeatureTab = ({ tab, isActive, onClick }) => {
@@ -16,7 +16,7 @@ const FeatureTab = ({ tab, isActive, onClick }) => {
       onClick={handleClick}
     >
        <span className=" font-montserrat">{tab.label}</span>
-      {isActive && <HiChevronDown className="ml-2 text-white" />}
+      
     </button>
   );
 };

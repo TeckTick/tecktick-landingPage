@@ -6,6 +6,7 @@ import { Drawer, List ,ListItem } from '@material-tailwind/react';
 import { Box, ListItemButton, ListItemIcon, ListItemText }  from "@mui/material"
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -55,7 +56,7 @@ const Navbar = () => {
             <img className="h-10 mx-2 my-2" src={logo} alt='logo-image'></img>
           </div>
           <div className='flex flex-row'>
-            {navbarData.map((item) => {
+            {menuOptions.map((item) => {
               return <div key={item.id}>
                 <Link to={item.link} spy={true} smooth={true} hashSpy={true} offset={50} duration={500} isDynamic={true} ignoreCancelEvents={false} spyThrottle={500} className='cursor-pointer text-dark font-inter text-lg font-medium tracking-tight py-1 px-2'>{item.name}</Link>
               </div>
@@ -77,7 +78,7 @@ const Navbar = () => {
           </List>
         </Box>
       </Drawer>
-    </nav>
+    </div>
   )
 }
 
