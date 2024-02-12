@@ -11,9 +11,9 @@ const Main = () => {
   return (
     <div>
       {/* <Navbar />
-      <Herosection />
-      <OurPartners />
-      <Features /> */}
+      <Herosection /> */}
+      {/* <OurPartners /> */}
+      {/* <Features /> */}
       <Testimonials />
       <Newsletter />
       <Footer />
