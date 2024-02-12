@@ -13,8 +13,16 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
+    "react-icons": "^5.0.1",
+    "react-id-swiper": "^4.0.0",
+    "react-responsive": "^9.0.2",
+=======
+>>>>>>> b4867a9d6bfc7d8f24ed005b8b270e078fff7b44
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0",
+    "react-swipeable": "^7.0.1",
+    "react-swipeable-views": "^0.14.0",
     "swiper": "^11.0.6",
     "web-vitals": "^2.1.4"
   },
