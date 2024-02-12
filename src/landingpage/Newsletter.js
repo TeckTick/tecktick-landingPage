@@ -10,11 +10,19 @@ const Newsletter = () => {
 
   return (
     <div className="bg-[#FFFFFF] p-8 items-center h-[307px] g-[73px]">
-      <div className="text-[24px] font-montserrat text-center font-bold mb-4">Get Our Weekly Newsletter</div>
-      <p className="mb-10 text-center">
-      Explanation of why you are going to love it and the benefit!
+      <div
+        className="text-[24px] md:text-[48px] font-montserrat text-center font-semibold mb-4 text-[#4A4A68]
+"
+      >
+        Get Our Weekly Newsletter
+      </div>
+      <p className="mb-10 text-center text-sm sm:text-xl text-[#4A4A68]">
+        Explanation of why you are going to love it and the benefit!
       </p>
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row sm:items-center">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col sm:flex-row sm:items-center"
+      >
         <input
           type="email"
           value={email}

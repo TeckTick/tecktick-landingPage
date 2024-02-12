@@ -10,10 +10,10 @@ import OurPartners from "./OurPartners";
 const Main = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Herosection />
       <OurPartners />
-      <Features />
+      <Features /> */}
       <Testimonials />
       <Newsletter />
       <Footer />
