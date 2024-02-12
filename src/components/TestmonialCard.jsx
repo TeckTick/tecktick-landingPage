@@ -6,7 +6,7 @@ const TestmonialCard = () => {
       <img
         src={avator}
         alt=""
-        className="w-[102px] h-[102px] object-cover  mx-auto rounded-full border-4 border-white mt-[-70px]"
+        className="w-[90px] h-[90px] sm:w-[102px] sm:h-[102px] object-cover  mx-auto rounded-full border-4 border-white mt-[-70px]"
       />
 
       <h2 className="font-lato font-semibold text-2xl sm:text-[28px] mb-5 mt-3">
