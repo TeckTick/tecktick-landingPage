@@ -10,17 +10,17 @@ import community from "../assets/images/community.png";
 const Howitworks = () => {
   return (
     <div className="p-5">
-      <div className="flex justify-between items-center h-[128px]">
-        <span>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 items-center justify-center mx-auto w-full h-[128px] ">
+        <span className="flex items-center justify-center">
           <img src={bbc} alt="" />
         </span>
-        <span>
+        <span className="flex items-center justify-center">
           <img src={deloitte} alt="" />
         </span>
-        <span>
+        <span className="flex items-center justify-center">
           <img src={unilever} alt="" />
         </span>
-        <span>
+        <span className="flex items-center justify-center">
           <img src={deloitte} alt="" />
         </span>
       </div>
@@ -33,7 +33,7 @@ const Howitworks = () => {
           How It Works
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 px-5 mx-auto w-full gap-5">
-          <div className="flex flex-col gap-5 items-center justify-center text-center mx-auto">
+          <div className="flex flex-col gap-5 items-center justify-center text-center font-inter">
             <span
               className="h-[84px] w-[84px] bg-[#EBE5FF]
 
@@ -47,7 +47,7 @@ rounded-lg p-5    flex items-center justify-center"
               nibh mauris, nec turpis
             </p>
           </div>
-          <div className="flex flex-col gap-5 items-center justify-center text-center">
+          <div className="flex flex-col gap-5 items-center justify-center text-center font-inter">
             <span
               className="h-[84px] w-[84px] bg-[#EBE5FF]
 
@@ -61,7 +61,7 @@ rounded-lg p-5    flex items-center justify-center"
               nibh mauris, nec turpis
             </p>
           </div>
-          <div className="flex flex-col gap-5 items-center justify-center text-center">
+          <div className="flex flex-col gap-5 font-inter items-center justify-center text-center">
             <span
               className="h-[84px] w-[84px] bg-[#EBE5FF]
 
@@ -83,8 +83,10 @@ rounded-lg p-5    flex items-center justify-center"
             >
               <img src={community} alt="" className="object-cover w-full" />
             </span>
-            <h2 className="font-semibold text-[#3a4f39]">Title goes here!</h2>
-            <p className="text-[#3a4f39]">
+            <h2 className="font-semibold font-inter text-[#3a4f39]">
+              Title goes here!
+            </h2>
+            <p className="text-[#3a4f39] font-inter">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
               nibh mauris, nec turpis
             </p>
