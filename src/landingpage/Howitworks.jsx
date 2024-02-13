@@ -10,7 +10,7 @@ import community from "../assets/images/community.png";
 const Howitworks = () => {
   return (
     <div className="p-5 relative">
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 items-center justify-center mx-auto w-full h-[128px] ">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 items-center justify-center mx-auto w-full h-[128px] mb-5">
         <span className="flex items-center justify-center">
           <img src={bbc} alt="" />
         </span>
@@ -24,7 +24,8 @@ const Howitworks = () => {
           <img src={deloitte} alt="" />
         </span>
       </div>
-      <hr className="mx-5" />
+      <hr className="mx-auto z-10 bg-black w-[90%] " />
+      
       <div className="py-8 flex flex-col items-center justify-center gap-12">
         <h1
           className="text-[24px] font-medium sm:text-[36px] font-montserrat text-center lg:text-[40px] text-[#4A4A68]
@@ -93,7 +94,7 @@ rounded-lg p-5    flex items-center justify-center"
           </div>
         </div>
       </div>
-      <div className="blur s-blur1 bg-[#5bc7dd94] mx-auto w-full absolute" ></div>
+      <div className="blur m-5 mx-auto  absolute" ></div>
     </div>
   );
 };
