@@ -9,7 +9,7 @@ import community from "../assets/images/community.png";
 
 const Howitworks = () => {
   return (
-    <div className="p-5">
+    <div className="p-5 relative">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 items-center justify-center mx-auto w-full h-[128px] ">
         <span className="flex items-center justify-center">
           <img src={bbc} alt="" />
@@ -93,6 +93,7 @@ rounded-lg p-5    flex items-center justify-center"
           </div>
         </div>
       </div>
+      <div className="blur s-blur1 bg-[#5bc7dd94] mx-auto w-full absolute" ></div>
     </div>
   );
 };
