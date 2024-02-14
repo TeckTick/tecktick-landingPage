@@ -102,12 +102,14 @@ nav img{
     /* line-height: 5rem; */
     max-width: 600px;
   }
+
   .primary-text {
     font-size: clamp(1rem, 3vw, 1.5rem);
     max-width: 500px;
     color: #6a6a6a;
     margin: 1.5rem 0rem;
   }
+
   .secondary-button {
     padding: 1rem 2.5rem;
     background-color: #fe9e0d;
@@ -123,10 +125,12 @@ nav img{
     align-items: center;
     justify-content: center;
   }
+
   .secondary-button img {
     margin-left: 0.75rem;
     font-size: 1.5rem;
   }
+
   .secondary-button:hover {
     background-color: #e48f0f;
   }
@@ -141,7 +145,7 @@ nav img{
   }
   .horizontal-line {
     width: 500px;
-    height: 5px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -200,12 +204,14 @@ nav img{
       align-items: center;
       margin-top: 4rem;
     }
+
     .secondary-button {
       font-size: 1rem;
       padding: 0.8rem 2rem;
       cursor: pointer;
       justify-content: space-between;
     }
+
     .primary-subheading {
       text-align: center;
     }
@@ -213,6 +219,7 @@ nav img{
       max-width: 95vw;
     }
   }
+
   @media (max-width: 600px) {
     .home-bannerImage-container,
     .about-background-image-container {
