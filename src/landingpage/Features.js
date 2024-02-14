@@ -8,8 +8,8 @@ const Features = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
   const checkMobile = () => {
-    setIsMobile(window.innerWidth < 497);
-    setIsTablet(window.innerWidth >= 497 && window.innerWidth < 770);
+    setIsMobile(window.innerWidth < 680);
+    setIsTablet(window.innerWidth >= 680 && window.innerWidth < 770);
   };
   window.addEventListener('resize', checkMobile);
   useEffect(() => {
