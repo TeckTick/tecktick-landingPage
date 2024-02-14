@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tecktick-landingPage/static/css/main.54e2b9fe.css",
-    "main.js": "/tecktick-landingPage/static/js/main.163f20dc.js",
+    "main.js": "/tecktick-landingPage/static/js/main.8512a01f.js",
     "static/js/592.04c1e64a.chunk.js": "/tecktick-landingPage/static/js/592.04c1e64a.chunk.js",
     "static/media/WhatsApp Image 2024-01-29 at 18.40 1.jpg": "/tecktick-landingPage/static/media/WhatsApp Image 2024-01-29 at 18.40 1.b4a2a4d6f56eb8d8571c.jpg",
     "static/media/tecktick.png": "/tecktick-landingPage/static/media/tecktick.0e2def6fbd6dd228bbbc.png",
@@ -9,11 +9,11 @@
     "static/media/Avatar.png": "/tecktick-landingPage/static/media/Avatar.533e8683118e173ff71a.png",
     "index.html": "/tecktick-landingPage/index.html",
     "main.54e2b9fe.css.map": "/tecktick-landingPage/static/css/main.54e2b9fe.css.map",
-    "main.163f20dc.js.map": "/tecktick-landingPage/static/js/main.163f20dc.js.map",
+    "main.8512a01f.js.map": "/tecktick-landingPage/static/js/main.8512a01f.js.map",
     "592.04c1e64a.chunk.js.map": "/tecktick-landingPage/static/js/592.04c1e64a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54e2b9fe.css",
-    "static/js/main.163f20dc.js"
+    "static/js/main.8512a01f.js"
   ]
 }
