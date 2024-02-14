@@ -15,7 +15,7 @@ import TestmonialCard from "../components/TestmonialCard";
 const Testimonials = () => {
   return (
     <div className="bg-[#ECE4FF] flex flex-col items-center justify-center p-5 sm:p-10 text-[#303030]">
-      <h1 className="font-montserrat font-medium text-3xl sm:text-[40px] text-[#4A4A68] sm:mb-6 text-center">
+      <h1 className="font-montserrat font-medium text-2xl sm:text-[32px] md:text-[40px] text-[#4A4A68] sm:mb-6 text-center">
         Testimonials
       </h1>
       <div className="w-full  flex items-center justify-center">
