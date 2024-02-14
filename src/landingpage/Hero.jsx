@@ -22,7 +22,7 @@ const Hero = () => {
             </button>
           </span>
         </div>
-        <div className="block items-center justify-center h-full w-full overflow-hidden rounded-[10px] max-h-[311px] lg:max-w-[611px] lg:max-h-[345px]">
+        <div className="block items-center justify-center h-full w-full overflow-hidden rounded-[10px] anmax-h-[311px] lg:max-w-[611px] lg:max-h-[345px]">
           <img
             src={hero}
             alt="teck tick home page"
