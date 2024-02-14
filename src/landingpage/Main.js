@@ -4,19 +4,19 @@ import Herosection from "./Herosection";
 import Features from "./Features";
 import Testimonials from "./Testimonials";
 import Newsletter from "./Newsletter";
-import Footer from "./Footer";
+ import Footer from "./Footer";
 import OurPartners from "./OurPartners";
 
 const Main = () => {
   return (
     <div>
-      {/* <Navbar />
+       <Navbar />
       <Herosection />
-      <OurPartners />
-      <Features /> */}
+      <OurPartners /> 
+      <Features /> 
       <Testimonials />
       <Newsletter />
-      <Footer />
+      <Footer /> 
     </div>
   );
 };
