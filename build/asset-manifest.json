@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tecktick-landingPage/static/css/main.ac785a9a.css",
+    "main.js": "/tecktick-landingPage/static/js/main.8a4ad912.js",
+    "static/js/592.988c54fd.chunk.js": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js",
+    "static/media/tecktick.png": "/tecktick-landingPage/static/media/tecktick.0e2def6fbd6dd228bbbc.png",
+    "static/media/Avatar.png": "/tecktick-landingPage/static/media/Avatar.533e8683118e173ff71a.png",
+    "index.html": "/tecktick-landingPage/index.html",
+    "main.ac785a9a.css.map": "/tecktick-landingPage/static/css/main.ac785a9a.css.map",
+    "main.8a4ad912.js.map": "/tecktick-landingPage/static/js/main.8a4ad912.js.map",
+    "592.988c54fd.chunk.js.map": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac785a9a.css",
+    "static/js/main.8a4ad912.js"
+  ]
+}
