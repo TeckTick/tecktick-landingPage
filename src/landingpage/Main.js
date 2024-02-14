@@ -9,8 +9,8 @@ import Footer from "./Footer";
 import Howitworks from "./Howitworks";
 import Hero from "./Hero";
 
- import Footer from "./Footer";
-import OurPartners from "./OurPartners";
+
+// import OurPartners from "./OurPartners";
 
 
 const Main = () => {
@@ -18,8 +18,8 @@ const Main = () => {
     <div>
 
        <Navbar />
-      <Herosection />
-      <OurPartners /> 
+      <Hero />
+      <Howitworks />
       <Features /> 
 
       <Testimonials />
