@@ -1,8 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import img from "../assets/WhatsApp Image 2024-01-29 at 18.40 1.jpg";
+import { LuRectangleHorizontal } from "react-icons/lu";
+import { FaRegCircle } from "react-icons/fa";
 
 const Features = () => {
   const [activeTab, setActiveTab] = useState("community");
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+  const checkMobile = () => {
+    setIsMobile(window.innerWidth < 680);
+    setIsTablet(window.innerWidth >= 680 && window.innerWidth < 770);
+  };
+  window.addEventListener('resize', checkMobile);
+  useEffect(() => {
+    checkMobile();
+  }, []);
 
   const tabs = [
     { name: "community", label: "Community", src: img },
@@ -20,19 +32,18 @@ const Features = () => {
     if (!currentTab) return null;
 
     return (
-      <div className="flex justify-center items-center absolute w-[1236px] h-[556px]  top-1/2 left-1/2 transform -translate-x-1/2  bg-[#ECE4FF] border-2 border-white rounded-[10px] shadow-lg">
-        <div className="flex flex-col justify-center items-center w-[612px] h-full p-119px">
-          <img
-            src={currentTab.src}
-            alt={currentTab.name}
-            className="w-[558px] h-[474px] rounded-[20px] filter drop-shadow-[0px 4px 4px rgba(151, 71, 255, 0.44)]"
-          />
-        </div>
-        <div className="font-montserrat flex flex-col justify-center items-start w-[612px] h-full p-0">
-          <h3 className="text-[36px] text-[#4A4A68] font-normal font-montserrat mb-2">{currentTab.label}</h3>
-          <p className="text-[#4A4A68] w-[373px] h-[60px] text-[20px] mb-6">Explanation of why you are going to love it and the benefit!</p>
-          <button className="w-[141px] h-[48px] rounded-[15.78px] border-[2px] border-[#000000] p-[10px] g-[10px]">
-            Learn More
+      <div className={`flex ${isTablet ? 'flex-col' : 'flex-row items-stretch'} 
+    ${isMobile ? 'flex-col' : 'space-x-4'} p-2 w-full h- bg-${isTablet ? 'transparent' : '[#ECE4FF]'} rounded-lg`}>
+      <div className={`flex ${isTablet ? 'w-full h-auto' : 'w-full md:w-1/2'} justify-center items-center p-2 space-y-2 rounded-lg`}>
+        <img src={currentTab.src} alt={currentTab.name} className={`w-full ${isTablet ? 'w-[704px]' : 'h-auto'} rounded-lg shadow-lg `} />
+      </div>
+        <div className="flex flex-col justify-center items-start p-2 space-y-2 w-full md:w-1/2 h-full rounded-lg">
+          <div className="flex flex-col items-start space-y-2">
+            <h3 className={`text-4xl font-montserrat font-semibold text-${isTablet ? 'white' : '[#4A4A68]'} `}>{currentTab.label}</h3>
+            <p className={`text-xl font-montserrat font-normal text-${isTablet ? 'white' : '[#4A4A68]'}`}>Explanation of why you are going to love it and the benefit!</p>
+          </div>
+          <button className={`flex flex-col justify-center items-center p-2 space-y-2 w-[141px] h-[48px] border-[2px] border-${isTablet ? 'white' : 'transparent'} border-[#4A4A68] rounded-[15.78px]`}>
+            <p className={`text-sm font-normal text-${isTablet ? 'white' : '[#4A4A68]'}w-[114px] h-[24px]`}>Learn More</p>
           </button>
         </div>
       </div>
@@ -40,34 +51,53 @@ const Features = () => {
   };
 
   return (
-    <div className="w-full h-[847px] bg-[#2F007A]">
-      <div className="w-full mx-auto mt-16 text-center">
-        <h2 className="text-white text-4xl font-medium font-montserrat top-[39px] pt-[20px]">
-          Features
-        </h2>
+    <div className={`flex flex-col items-center p-4 space-y-4 w-full h-[947px] bg-[#2f007a]`}>
+      <div className="flex flex-row justify-center items-center p-4 space-x-4 w-full h-16">
+        <h2 className="text-4xl font-montserrat font-semibold text-white">Features</h2>
       </div>
-      <div className="flex justify-center mt-8">
-        <nav className={`flex space-x-11 ${tabs.length > 2 ? 'flex-col sm:flex-row' : 'flex-row'}`}>
-          {tabs.map((tab) => (
+      <div className="flex flex-row justify-between items-center w-[560px] h-16">
+        {isMobile ? (
+          <div className="flex flex-row justify-center items-center font-montserrat w-full">
+            {tabs.map((tab) => (
+              <button
+                key={tab.name}
+                className={`focus:outline-none ${activeTab === tab.name ? "text-white border-b-2 border-white" : "text-transparent"}`}
+                onClick={() => handleTabClick(tab.name)}
+              >
+                {activeTab === tab.name ? tab.label : ""}
+              </button>
+            ))}
+          </div>
+        ) : (
+          tabs.map((tab) => (
             <button
               key={tab.name}
-              className={`flex items-center justify-between w-full text-[#FFFFFF] ${
-                activeTab === tab.name ? "text-[#FFFFFF] border-b-2 border-[#FFFFFF]" : "text-[#FFFFFF] hover:text-[#FFFFFF] font-light text-[20px]"
-              }`}
+              className={`text-white text-lg ${activeTab === tab.name ? "border-b-2 border-white" : ""}`}
               onClick={() => handleTabClick(tab.name)}
             >
-              <span className=" font-montserrat">{tab.label}</span>
+              {tab.label}
             </button>
-          ))}
-        </nav>
+          ))
+        )}
       </div>
-      <div className="w-full mt-8 mx-auto max-w-lg flex flex-col items-center relative">
+      <div className="flex flex-col items-center p-4 space-y-4 w-full h-[556px]">
         {renderTabContent()}
+        {isMobile && (
+          <div className="flex flex-row justify-center items-center p-2 space-x-2 w-36 h-auto">
+            {tabs.map((tab) => (
+              <button
+                key={tab.name}
+                className={`focus:outline-none ${activeTab === tab.name ? "text-white" : ""}`}
+                onClick={() => handleTabClick(tab.name)}
+              >
+                {activeTab === tab.name ? <LuRectangleHorizontal className="w-[27px] h-[10px] rounded-[15px] bg-white" /> : <FaRegCircle className="w-[10px] h-[10px] bg-[#9F75FF] text-[#9F75FF]" />}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
 export default Features;
-
-

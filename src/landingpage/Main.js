@@ -4,23 +4,27 @@ import Navbar from "./Navbar";
 import Features from "./Features";
 import Testimonials from "./Testimonials";
 import Newsletter from "./Newsletter";
+
 import Footer from "./Footer";
 import Howitworks from "./Howitworks";
 import Hero from "./Hero";
-// import OurPartners from "./OurPartners";
+
+ import Footer from "./Footer";
+import OurPartners from "./OurPartners";
+
 
 const Main = () => {
   return (
     <div>
-      {/* <Navbar />
-      <Herosection />  */}
-      {/* <OurPartners />  */}
-      <Hero />
-      <Howitworks />
-       <Features />
+
+       <Navbar />
+      <Herosection />
+      <OurPartners /> 
+      <Features /> 
+
       <Testimonials />
       <Newsletter />
-      <Footer />
+      <Footer /> 
     </div>
   );
 };
