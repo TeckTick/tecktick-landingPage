@@ -2,29 +2,27 @@ import React from "react";
 import Navbar from "./Navbar";
 // import Herosection from "./Herosection";
 import Features from "./Features";
-import Testimonials from "./Testimonials";
+
 import Newsletter from "./Newsletter";
 
-import Footer from "./Footer";
-import Howitworks from "./Howitworks";
-import Hero from "./Hero";
-
+import Hero from "../components/hero/Hero";
+import Howitworks from "../components/howitworks/Howitworks";
+import Testimonials from "../components/testimonial/Testimonials";
+import Footer from "../components/footer/Footer";
 
 // import OurPartners from "./OurPartners";
-
 
 const Main = () => {
   return (
     <div>
-
-       <Navbar />
+      <Navbar />
       <Hero />
       <Howitworks />
-      <Features /> 
+      <Features />
 
       <Testimonials />
       <Newsletter />
-      <Footer /> 
+      <Footer />
     </div>
   );
 };
