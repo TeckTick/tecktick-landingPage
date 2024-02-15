@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import img from "../assets/images/WhatsApp Image 2024-01-29 at 18.40 1.jpg";
+import img from "../../assets/images/WhatsApp Image 2024-01-29 at 18.40 1.jpg";
 import { LuRectangleHorizontal } from "react-icons/lu";
 import { FaRegCircle } from "react-icons/fa";
 
@@ -42,8 +42,8 @@ const Features = () => {
             <h3 className={`text-4xl font-montserrat font-semibold text-${isTablet ? 'white' : '[#4A4A68]'} `}>{currentTab.label}</h3>
             <p className={`text-xl font-montserrat font-normal text-${isTablet ? 'white' : '[#4A4A68]'}`}>Explanation of why you are going to love it and the benefit!</p>
           </div>
-          <button className={`flex flex-col justify-center items-center p-2 space-y-2 w-[141px] h-[48px] border-[2px] border-${isTablet ? 'white' : 'transparent'} border-[#4A4A68] rounded-[15.78px]`}>
-            <p className={`text-sm font-normal text-${isTablet ? 'white' : '[#4A4A68]'}w-[114px] h-[24px]`}>Learn More</p>
+          <button className={`flex flex-col justify-center items-center p-2 space-y-2 w-[141px] h-[48px] border-[2px] border-${isTablet ? 'white' : 'transparent'} border-[#4A4A68] rounded-[15.78px] `}>
+            <p className={`text-sm font-normal text-${isTablet ? 'white' : '[#4A4A68]'} w-[114px] h-[24px] `}>Learn More</p>
           </button>
         </div>
       </div>
@@ -51,11 +51,11 @@ const Features = () => {
   };
 
   return (
-    <div className={`flex flex-col items-center p-4 space-y-4 w-full h-[947px] bg-[#2f007a]`}>
+    <div className={`flex flex-col items-center p-5 space-y-4 w-full h-[947px] bg-[#2f007a]`}>
       <div className="flex flex-row justify-center items-center p-4 space-x-4 w-full h-16">
         <h2 className="text-4xl font-montserrat font-semibold text-white">Features</h2>
       </div>
-      <div className="flex flex-row justify-between items-center w-[560px] h-16">
+      <div className="flex flex-row justify-between items-center w-full max-w-[560px] h-16">
         {isMobile ? (
           <div className="flex flex-row justify-center items-center font-montserrat w-full">
             {tabs.map((tab) => (
@@ -80,7 +80,7 @@ const Features = () => {
           ))
         )}
       </div>
-      <div className="flex flex-col items-center p-4 space-y-4 w-full h-[556px]">
+      <div className="flex flex-col items-center space-y-4 w-full h-[556px]">
         {renderTabContent()}
         {isMobile && (
           <div className="flex flex-row justify-center items-center p-2 space-x-2 w-36 h-auto">
