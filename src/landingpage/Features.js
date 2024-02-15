@@ -51,11 +51,11 @@ const Features = () => {
   };
 
   return (
-    <div className={`flex flex-col items-center p-4 space-y-4 w-full h-[947px] bg-[#2f007a]`}>
+    <div className={`flex flex-col items-center p-5 space-y-4 w-full h-[947px] bg-[#2f007a]`}>
       <div className="flex flex-row justify-center items-center p-4 space-x-4 w-full h-16">
         <h2 className="text-4xl font-montserrat font-semibold text-white">Features</h2>
       </div>
-      <div className="flex flex-row justify-between items-center w-[560px] h-16">
+      <div className="flex flex-row justify-between items-center w-full max-w-[560px] h-16">
         {isMobile ? (
           <div className="flex flex-row justify-center items-center font-montserrat w-full">
             {tabs.map((tab) => (
@@ -80,7 +80,7 @@ const Features = () => {
           ))
         )}
       </div>
-      <div className="flex flex-col items-center p-4 space-y-4 w-full h-[556px]">
+      <div className="flex flex-col items-center space-y-4 w-full h-[556px]">
         {renderTabContent()}
         {isMobile && (
           <div className="flex flex-row justify-center items-center p-2 space-x-2 w-36 h-auto">
