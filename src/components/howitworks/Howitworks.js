@@ -1,7 +1,7 @@
-import notification from "../../assets/images/notification.png";
-import media from "../../assets/images/media.png";
-import support from "../../assets/images/support.png";
-import community from "../../assets/images/community.png";
+import notification from "../../assets/images/notification.svg";
+import media from "../../assets/images/media.svg";
+import support from "../../assets/images/support.svg";
+import community from "../../assets/images/community.svg";
 import Partner from "./Partner";
 import { partners } from "../../data/partners";
 
