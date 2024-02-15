@@ -42,8 +42,8 @@ const Features = () => {
             <h3 className={`text-4xl font-montserrat font-semibold text-${isTablet ? 'white' : '[#4A4A68]'} `}>{currentTab.label}</h3>
             <p className={`text-xl font-montserrat font-normal text-${isTablet ? 'white' : '[#4A4A68]'}`}>Explanation of why you are going to love it and the benefit!</p>
           </div>
-          <button className={`flex flex-col justify-center items-center p-2 space-y-2 w-[141px] h-[48px] border-[2px] border-${isTablet ? 'white' : 'transparent'} border-[#4A4A68] rounded-[15.78px]`}>
-            <p className={`text-sm font-normal text-${isTablet ? 'white' : '[#4A4A68]'}w-[114px] h-[24px]`}>Learn More</p>
+          <button className={`flex flex-col justify-center items-center p-2 space-y-2 w-[141px] h-[48px] border-[2px] border-${isTablet ? 'white' : 'transparent'} border-[#4A4A68] rounded-[15.78px] `}>
+            <p className={`text-sm font-normal text-${isTablet ? 'white' : '[#4A4A68]'} w-[114px] h-[24px] `}>Learn More</p>
           </button>
         </div>
       </div>
