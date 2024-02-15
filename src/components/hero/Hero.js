@@ -13,16 +13,16 @@ const Hero = () => {
             Tell the world how awesome your site is and why they should use it!!
             Tell the world how awesome your site is and why they should use it!!
           </p>
-          <span className="flex flex-col gap-5 sm:flex-row mt-3">
-            <button className="bg-[#95C6E4] font-semibold text-[#450099] rounded-[15px] w-[335px] h-[44px] sm:w-[213px] sm:h-[64px]">
+          <span className="flex flex-col gap-2.5 sm:flex-row mt-3 ">
+            <button className="bg-[#95C6E4] font-semibold text-[#450099] rounded-[15px] w-[90vw] h-[44px] sm:w-[213px] sm:h-[64px] mx-auto sm:mx-0">
               Get Started
             </button>
-            <button className="text-[#95C6E4] font-semibold border-[#95c6e4] rounded-[15px] w-[335px] h-[44px] sm:w-[213px] sm:h-[64px] border">
+            <button className="text-[#95C6E4] font-semibold border-[#95c6e4] rounded-[15px] w-[90vw] h-[44px] sm:w-[213px] sm:h-[64px] border mx-auto sm:mx-0">
               Explore Community
             </button>
           </span>
         </div>
-        <div className="block items-center justify-center h-full w-full overflow-hidden rounded-[10px] anmax-h-[311px] lg:max-w-[611px] lg:max-h-[345px]">
+        <div className="block items-center justify-center h-full w-full overflow-hidden rounded-[10px] max-h-[311px] lg:max-w-[611px] lg:max-h-[345px]">
           <img
             src={hero}
             alt="teck tick home page"
