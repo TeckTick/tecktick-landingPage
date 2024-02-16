@@ -1,13 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import logo from "../../assets/images/tecktick.png";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [showPortalsMenu, setShowPortalsMenu] = useState(false);
+  const [navBarColor, setNavBarColor] = useState("transparent");
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 10) {
+      setNavBarColor("bg-[#2f007a]");
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="bg-[#2f007a] h-16 flex items-center justify-between px-4 mx-auto text-white">
+    <nav
+      className={`${navBarColor} flex items-center justify-between px-4 mx-auto text-white fixed top left-0 right-0 z-[10] `}>
       {/* Logo */}
       <div className="flex items-center justify-between w-full md:max-w-[1440px] md:container md:flex md:items-center md:justify-between mx-auto">
         <div>
