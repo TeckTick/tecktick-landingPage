@@ -76,11 +76,11 @@ const Howitworks = () => {
               style with exclusive merchandise that celebrates your passion for
               innovation.
             </p>
-          </article>
+            </div>
         </div>
       </section>
       <div className="blur m-5 mx-auto absolute"></div>
-    </section>
+    </div>
   );
 };
 
