@@ -15,12 +15,13 @@ export const partners = [
   },
   {
     id: 3,
-    name: "Deloitte",
-    img: { deloitte },
+    name: "BBC",
+    img: { bbc },
   },
   {
     id: 4,
-    name: "BBC",
-    img: { bbc },
+
+    name: "Deloitte",
+    img: { deloitte },
   },
 ];
