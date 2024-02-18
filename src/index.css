@@ -1,29 +1,51 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200;1,400;1,700&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Poppins:ital,wght@0,100;0,200;1,200;1,400;1,700&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200;1,400;1,700&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Poppins:ital,wght@0,100;0,200;1,200;1,400;1,700&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Inter:wght@400..900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Patrick+Hand&display=swap");
 
+.how_it_works_article {
+  @apply flex flex-col gap-5 items-center justify-center text-center;
+}
 
+.how_it_works_image_container {
+  @apply h-[84px] w-[84px] bg-[#EBE5FF] rounded-lg p-5 flex items-center justify-center;
+}
 
-.nav-width{
+.how_it_works_image {
+  @apply object-cover w-full;
+}
+
+.how_it_works_heading {
+  @apply font-semibold text-[#3a4f39];
+}
+
+.how_it_works_paragraph {
+  @apply text-[#3a4f39];
+}
+
+.footer_links {
+  @apply flex flex-col gap-3 font-patrick h-full mx-auto items-start md:items-start justify-start;
+}
+
+.footer_links_h2 {
+  @apply text-xl border-b lg:border-b-0;
+}
+
+.nav-width {
   justify-content: space-around;
   padding: 4px;
   font-weight: bolder;
   text-transform: uppercase;
-} 
+}
 
 /* .w-full:hover{
     color: blue;
 } */
 
-
-
-
 /* Import  Montserrat and Lato font */
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Inter:wght@400..900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Patrick+Hand&display=swap");
 
 /*  custom classes to set font family to Montserrat and Lato */
 
@@ -35,13 +57,12 @@
   font-family: "Lato", sans-serif;
 }
 
-.font-patrick{
+.font-patrick {
   font-family: "Patrick Hand", cursive;
 }
 
-.font-inter{
+.font-inter {
   font-family: "Inter", sans-serif;
-
 }
 
 /* custom css to change the color and size of swiper controls */
@@ -56,7 +77,6 @@
   height: 12px !important;
 }
 
-
 /* hide swiper buttons on small screens */
 @media (max-width: 950px) {
   .swiper-button-next,
@@ -65,7 +85,7 @@
   }
 }
 
-.blur{
+.blur {
   position: absolute;
   width: 90%;
   height: 100px;
@@ -74,7 +94,6 @@
   filter: blur(212px);
   z-index: 0;
   top: 0;
- right: 0;
+  right: 0;
   filter: blur(72px);
-
 }
