@@ -5,7 +5,7 @@ import About from './pages/About'
 const App = () => {
   return (
   <>
-      {/* <Landingpage/> */}
+      <Landingpage/>
       <About />
   </>
   )

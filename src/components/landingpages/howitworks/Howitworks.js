@@ -26,7 +26,7 @@ const Howitworks = () => {
         >
           How It Works
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 px-5 mx-auto w-full gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 px-5 mx-auto w-full gap-5">
           <div className="flex flex-col gap-5 items-center justify-start text-center font-inter">
             <span className="h-[84px] w-[84px] bg-[#EBE5FF] rounded-lg p-5  lex items-center justify-center">
               <img src={media} alt="" className="object-cover w-full" />
