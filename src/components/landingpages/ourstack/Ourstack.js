@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img from "../../assets/images/WhatsApp Image 2024-01-29 at 18.40 1.jpg";
+import img from "../../../assets/images/WhatsApp Image 2024-01-29 at 18.40 1.jpg";
 import { LuRectangleHorizontal } from "react-icons/lu";
 import { FaRegCircle } from "react-icons/fa";
 

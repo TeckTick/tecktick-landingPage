@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
-import logo from "../../assets/images/tecktick.png";
+import logo from "../../../assets/images/tecktick.png";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);

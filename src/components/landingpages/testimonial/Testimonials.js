@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 import TestmonialCard from "./TestmonialCard";
 
-import { testimonials } from "../../data/testimonials";
+import { testimonials } from "../../../data/testimonials";
 
 const Testimonials = () => {
   return (
