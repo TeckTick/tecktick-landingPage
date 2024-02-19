@@ -1,13 +1,12 @@
 import React from 'react'
-
+import Landingpage from './pages/Landingpage'
 import About from './pages/About'
-import Main from './pages/Landing'
 
 const App = () => {
   return (
   <>
-    <Main />
-   
+      {/* <Landingpage/> */}
+      <About />
   </>
   )
 }

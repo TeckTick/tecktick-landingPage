@@ -1,6 +1,6 @@
 import React from "react";
-import membership_benefits from "../../assets/images/membership-benefits.png";
-import upcoming_events from "../../assets/images/upcoming-events.png";
+import membership_benefits from "../../../assets/images/membership-benefits.png";
+import upcoming_events from "../../../assets/images/upcoming-events.png";
 
 const DiscoverEvents = () => {
   return (

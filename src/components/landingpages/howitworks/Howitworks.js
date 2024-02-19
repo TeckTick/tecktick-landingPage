@@ -1,9 +1,9 @@
-import notification from "../../assets/images/notification.svg";
-import media from "../../assets/images/media.svg";
-import support from "../../assets/images/support.svg";
-import community from "../../assets/images/community.svg";
+import notification from "../../../assets/images/notification.svg";
+import media from "../../../assets/images/media.svg";
+import support from "../../../assets/images/support.svg";
+import community from "../../../assets/images/community.svg";
 import Partner from "./Partner";
-import { partners } from "../../data/partners";
+import { partners } from "../../../data/partners";
 
 import Marquee from "react-fast-marquee";
 
@@ -66,14 +66,14 @@ const Howitworks = () => {
               your ingenuity, and compete for cosmic acclaim.
             </p>
           </div>
-          <div className="flex flex-col gap-5 items-center justify-start text-center">
+          <div className="flex flex-col gap-5 items-center justify-start text-center font-inter">
             <span className="h-[84px] w-[84px] bg-[#EBE5FF] rounded-lg p-5    flex items-center justify-center">
               <img src={community} alt="" className="object-cover w-full" />
             </span>
             <h2 className="font-semibold font-inter text-[#3a4f39]">
               Engage with the TeckTick Cosmos
             </h2>
-            <p className="text-[#3a4f39] font-inter">
+            <p className="text-[#3a4f39] ">
               Journey through the Merchandise Cosmos and discover stellar
               treasures adorned with the TeckTick insignia. Elevate your cosmic
               style with exclusive merchandise that celebrates your passion for

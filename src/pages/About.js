@@ -1,5 +1,5 @@
 import React from "react";
-import DiscoverEvents from "../components/discover-events/DiscoverEvents";
+import DiscoverEvents from "../components/aboutpages/discover-events/DiscoverEvents";
 
 const About = () => {
   return (

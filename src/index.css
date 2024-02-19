@@ -1,29 +1,26 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200;1,400;1,700&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Poppins:ital,wght@0,100;0,200;1,200;1,400;1,700&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200;1,400;1,700&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Poppins:ital,wght@0,100;0,200;1,200;1,400;1,700&family=Roboto:ital,wght@0,100;0,500;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Inter:wght@400..900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Patrick+Hand&display=swap");
 
 
 
-.nav-width{
+
+.nav-width {
   justify-content: space-around;
   padding: 4px;
   font-weight: bolder;
   text-transform: uppercase;
-} 
+}
 
 /* .w-full:hover{
     color: blue;
 } */
 
-
-
-
 /* Import  Montserrat and Lato font */
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Inter:wght@400..900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Patrick+Hand&display=swap");
 
 /*  custom classes to set font family to Montserrat and Lato */
 
@@ -35,13 +32,12 @@
   font-family: "Lato", sans-serif;
 }
 
-.font-patrick{
+.font-patrick {
   font-family: "Patrick Hand", cursive;
 }
 
-.font-inter{
+.font-inter {
   font-family: "Inter", sans-serif;
-
 }
 
 /* custom css to change the color and size of swiper controls */
@@ -56,7 +52,6 @@
   height: 12px !important;
 }
 
-
 /* hide swiper buttons on small screens */
 @media (max-width: 950px) {
   .swiper-button-next,
@@ -65,7 +60,7 @@
   }
 }
 
-.blur{
+.blur {
   position: absolute;
   width: 95%;
   height: 150px;
@@ -74,7 +69,6 @@
   filter: blur(212px);
   z-index: 0;
   top: 0;
- right: 0;
+  right: 0;
   filter: blur(72px);
-
 }
