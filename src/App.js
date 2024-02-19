@@ -1,10 +1,13 @@
 import React from 'react'
-import Main from './landingpage/Main'
+
+import About from './pages/About'
+import Main from './pages/Landing'
 
 const App = () => {
   return (
   <>
-  <Main/>
+    <Main />
+   
   </>
   )
 }
