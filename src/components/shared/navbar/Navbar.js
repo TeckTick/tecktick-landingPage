@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
+
 import logo from "../../../assets/images/tecktick.png";
+import { navLinks, portalLinks } from "../../../data/constants";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -25,43 +28,43 @@ function Navbar() {
 
   return (
     <nav
-      className={`${navBarColor} flex items-center justify-between px-4 mx-auto text-white fixed top left-0 right-0 z-[10] `}>
+      className={`${navBarColor} flex items-center justify-between px-4 py-2 mx-auto text-white fixed top left-0 right-0 z-[10] `}>
       {/* Logo */}
       <div className="flex items-center justify-between w-full md:max-w-[1440px] md:container md:flex md:items-center md:justify-between mx-auto">
-        <div>
+        <Link to="/tecktick-landingPage">
           <img
             src={logo}
             alt="logo"
             className="w-[40px] h-[auto] rounded-full"
           />
-        </div>
+        </Link>
 
         {/* Portals */}
         <div className="hidden md:flex items-center gap-8">
           <div
             className="hidden md:flex items-center relative gap-8"
             onClick={() => setShowPortalsMenu(!showPortalsMenu)}>
-            <p className="flex items-center gap-1">
+            <p className="flex items-center gap-1 cursor-pointer">
               Portals {showPortalsMenu ? <HiChevronUp /> : <HiChevronDown />}
             </p>
+
             {/* Portals Menu */}
             {showPortalsMenu && (
               <div className="absolute top-full left-0 bg-[#2f007a] mt-2 py-2 px-4 rounded shadow-md flex flex-col gap-3">
-                <div>Events</div>
-                <div>Community</div>
-                <div>Hackathons</div>
-                <div>Merchandise</div>
+                {portalLinks.map((link) => (
+                  <Link to={link.href} key={link.href}>
+                    {link.name}
+                  </Link>
+                ))}
               </div>
             )}
+
             {/* Navigation Links for Medium and Larger Screens */}
-            {/* About */}
-            <div>About</div>
-            {/* Blog */}
-            <div>Blog</div>
-            {/* Gallery */}
-            <div>Gallery</div>
-            {/* Sign In */}
-            <div>Sign In</div>
+            {navLinks.map((link) => (
+              <Link to={link.href} key={link.href}>
+                {link.name}
+              </Link>
+            ))}
           </div>
         </div>
 
@@ -98,25 +101,27 @@ function Navbar() {
                 {/* Portals Menu */}
                 {showPortalsMenu && (
                   <div className="absolute top-full left-0 bg-[#2f007a] mt-2 py-2 px-4 rounded shadow-md flex flex-col gap-4 ">
-                    <div>Events</div>
-                    <div>Community</div>
-                    <div>Hackathons</div>
-                    <div>Merchandise</div>
+                    {portalLinks.map((link) => (
+                      <Link to={link.href} key={link.href}>
+                        {link.name}
+                      </Link>
+                    ))}
                   </div>
                 )}
               </div>
-              <div>About</div>
-              <div>Blog</div>
-              <div>Gallery</div>
-              <div>Sign In</div>
+              {navLinks.map((link) => (
+                <Link to={link.href} key={link.href}>
+                  {link.name}
+                </Link>
+              ))}
             </div>
           </div>
         )}
 
         {/* Get Started Button */}
-        <div className="hidden md:block bg-[#95C6E4] px-4 py-2 rounded-[15.78px] text-white">
+        <button className="hidden md:block bg-[#95C6E4] px-4 py-2 rounded-[15.78px] text-white">
           Get Started
-        </div>
+        </button>
       </div>
     </nav>
   );
