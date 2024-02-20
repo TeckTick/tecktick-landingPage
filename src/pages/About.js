@@ -23,26 +23,25 @@ const About = () => {
     <div>
       <Hero />
       <section className="flex flex-col gap-3">
-      <MissionStory
-        title={missionTitle}
-        description1={missionDescription1}
-        description2={missionDescription2}
-        image={mission_img}
-        smallImg={mdMission_img}
-        flexStyle="flex-row"
-      />
-      <MissionStory
-        title={storyTitle}
-        description1={storyDescription1}
-        description2={storyDescription2}
-        image={story_img}
-        smallImg={mdStory_img}
-        flexStyle="flex-row-reverse"
-      />
-    </section>
-    <Meetteam/>
-   <DiscoverEvents />
-
+        <MissionStory
+          title={missionTitle}
+          description1={missionDescription1}
+          description2={missionDescription2}
+          image={mission_img}
+          smallImg={mdMission_img}
+          flexStyle="lg:flex-row"
+        />
+        <MissionStory
+          title={storyTitle}
+          description1={storyDescription1}
+          description2={storyDescription2}
+          image={story_img}
+          smallImg={mdStory_img}
+          flexStyle="lg:flex-row-reverse"
+        />
+      </section>
+      <Meetteam />
+      <DiscoverEvents />
     </div>
   );
 };
