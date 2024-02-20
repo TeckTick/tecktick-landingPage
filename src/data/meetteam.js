@@ -51,7 +51,7 @@ const teamdata =[
         "id": "6",
         "image": frame274,
         "name":"Lilian Mwende",
-        "role":"Accounts,Resource officer",
+        "role":"HR Manager",
         "linkedin": "https://www.linkedin.com/in/lilianmwende/"
     },
 

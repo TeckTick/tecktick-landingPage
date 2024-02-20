@@ -32,8 +32,8 @@ const Meetteam = () => {
         {teamdata.slice(startIndex, startIndex + itemsPerPage).map((item, index) => (
           <div key={index} className='flex flex-col items-center'>
             <img src={item.image} alt={item.name} className='w-[292px] h-[438px] mb-4' />
-            <p className='font-semibold text-[20px] text-center text-[#000000]'>
-              <span onClick={() => handleNameClick(item.linkedin)} className=' cursor-pointer'>{item.name}  </span> 
+            <p className='font-semibold text-[20px] text-center text-[#000000] w-[292px]'>
+              <span onClick={() => handleNameClick(item.linkedin)} className=' cursor-pointer'>{item.name} </span> 
               <span className='text-[#5C5C77] font-normal'> {item.role}</span>
             </p>
           </div>
