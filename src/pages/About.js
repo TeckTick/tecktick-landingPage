@@ -7,6 +7,7 @@ const About = () => {
     <div>
       <Hero />
       <DiscoverEvents />
+      
     </div>
   );
 };

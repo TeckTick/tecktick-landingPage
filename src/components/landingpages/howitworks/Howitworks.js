@@ -21,7 +21,7 @@ const Howitworks = () => {
 
       <div className="py-8 flex flex-col items-center justify-center gap-12">
         <h1
-          className="text-[24px] font-medium sm:text-[36px] font-montserrat text-center lg:text-[40px] text-[#4A4A68]
+          className="text-[24px] font-medium sm:text-[36px] font-montserrat text-center lg:text-[40px] text-[#4A4A68] 
 "
         >
           How It Works

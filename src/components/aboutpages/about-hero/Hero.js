@@ -1,12 +1,12 @@
 import React from "react";
 import about_hero from "../../../assets/images/about-hero.png";
+import { GoChevronRight } from "react-icons/go";
 
 const Hero = () => {
-  // take path name from url
-
+ 
   return (
     <div
-      className="text-white w-full bg-black flex flex-col px-5 sm:px-10 md:px-20 font-montserrat"
+      className="text-white w-full bg-black flex flex-col px-5 sm:px-10 md:px-20 font-montserrat pt-20"
       style={{
         left: "calc(50% - 1440px/2)",
         top: "0px",
@@ -15,9 +15,11 @@ const Hero = () => {
         backgroundPosition: "center",
       }}
     >
-      <span className="flex mt-5 text-sm gap-5">
+      <span className="flex mt-5 text-sm gap-5 items-center justify-start">
         <p>Home</p>
-        <p>/</p>
+        <p>
+          <GoChevronRight />
+        </p>
         <p>About</p>
       </span>
 
