@@ -67,7 +67,7 @@ const teamdata =[
     {
         "id": "8",
         "image": frame271,
-        "name":"Arnold Aswan",
+        "name":"Arnold Aswani",
         "role":"Developer",
         "linkedin": "https://www.linkedin.com/in/arnold-aswani-390187205/"
     },
