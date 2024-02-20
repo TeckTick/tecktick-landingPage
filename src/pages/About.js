@@ -1,4 +1,7 @@
 import React from "react";
+import DiscoverEvents from "../components/aboutpages/discover-events/DiscoverEvents";
+import Hero from "../components/aboutpages/about-hero/Hero";
+import Meetteam from "../components/aboutpages/Team/Meetteam";
 import MissionStory from "../components/aboutpages/missionstory/MissionStory";
 
 import mission_img from "../assets/images/Frame 239.png";
@@ -17,7 +20,9 @@ import {
 
 const About = () => {
   return (
-    <section className="flex flex-col gap-3">
+    <div>
+      <Hero />
+      <section className="flex flex-col gap-3">
       <MissionStory
         title={missionTitle}
         description1={missionDescription1}
@@ -35,6 +40,10 @@ const About = () => {
         flexStyle="flex-row-reverse"
       />
     </section>
+    <Meetteam/>
+   <DiscoverEvents />
+
+    </div>
   );
 };
 
