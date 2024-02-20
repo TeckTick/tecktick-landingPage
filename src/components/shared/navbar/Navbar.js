@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 
 import logo from "../../../assets/images/tecktick.png";
+
+
 import { navLinks, portalLinks } from "../../../data/constants";
 
 function Navbar() {

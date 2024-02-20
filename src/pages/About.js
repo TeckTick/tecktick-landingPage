@@ -7,8 +7,10 @@ const About = () => {
   return (
     <div>
       <Hero />
+
       <Meetteam/>
    <DiscoverEvents />
+
     </div>
   );
 };

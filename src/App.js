@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/shared/navbar/Navbar";
@@ -13,7 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/tecktick-landingPage" element={<Landingpage />} />
         <Route path="/about-us" element={<About />} />
-        
+
       </Routes>
       <Footer />
     </>
