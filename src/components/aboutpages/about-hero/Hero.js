@@ -15,12 +15,12 @@ const Hero = () => {
         backgroundPosition: "center",
       }}
     >
-      <span className="flex mt-5 text-sm gap-5 items-center justify-start">
+      <span className="flex mt-5 text-sm gap-1 items-center justify-start">
         <p>Home</p>
         <p>
           <GoChevronRight />
         </p>
-        <p>About</p>
+        <p>About us</p>
       </span>
 
       <h1 className="text-center font-bold text-[32px] sm:text-[60px] max-w-[600px] self-center mt-20 mb-32">
