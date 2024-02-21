@@ -25,14 +25,14 @@ const Meetteam = () => {
   };
 
   return (
-    <div className='w-full bg-[#ECE4FF] mx-auto py-14 relative'>
-      <p className='font-semibold text-[44px] font-montserrat text-[#450099] text-center mb-14'>Meet The Team</p>
+    <div className='w-full bg-[#ECE4FF] mx-auto py-8 relative'>
+      <p className='font-semibold text-[44px] font-montserrat text-[#450099] text-center mb-10'>Meet The Team</p>
 
       <div className='flex flex-row w-full justify-center gap-8 mb-10'>
         {teamdata.slice(startIndex, startIndex + itemsPerPage).map((item, index) => (
           <div key={index} className='flex flex-col items-center'>
             <img src={item.image} alt={item.name} className='w-[292px] h-[438px] mb-4' />
-            <p className='font-semibold text-[20px] text-center text-[#000000]'>
+            <p className='font-semibold text-[20px] text-center text-[#000000] w-[292px]'>
               <span onClick={() => handleNameClick(item.linkedin)} className=' cursor-pointer'>{item.name}  </span> 
               <span className='text-[#5C5C77] font-normal'> {item.role}</span>
             </p>
