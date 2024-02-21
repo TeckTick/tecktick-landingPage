@@ -17,6 +17,7 @@ import {
   storyDescription1,
   storyDescription2,
 } from "../data/mission-story";
+import Quotes from "../components/aboutpages/quote/Qoutes";
 
 const About = () => {
   return (
@@ -41,6 +42,7 @@ const About = () => {
         />
       </section>
       <Meetteam />
+      <Quotes />
       <DiscoverEvents />
     </div>
   );
