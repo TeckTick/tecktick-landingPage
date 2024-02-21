@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 
 import logo from "../../../assets/images/tecktick.png";
+
+
 import { navLinks, portalLinks } from "../../../data/constants";
 
 function Navbar() {
@@ -28,7 +30,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`${navBarColor} flex items-center justify-between px-4 py-2 mx-auto text-white fixed top left-0 right-0 z-[10] `}>
+      className={`${navBarColor} flex items-center justify-between px-4 py-2 mx-auto text-white sticky top-0 z-[10] `}>
       {/* Logo */}
       <div className="flex items-center justify-between w-full md:max-w-[1440px] md:container md:flex md:items-center md:justify-between mx-auto">
         <Link to="/tecktick-landingPage">
@@ -41,10 +43,10 @@ function Navbar() {
 
         {/* Portals */}
         <div className="hidden md:flex items-center gap-8">
-          <div
-            className="hidden md:flex items-center relative gap-8"
-            onClick={() => setShowPortalsMenu(!showPortalsMenu)}>
-            <p className="flex items-center gap-1 cursor-pointer">
+          <div className="hidden md:flex items-center relative gap-8">
+            <p
+              className="flex items-center gap-1 cursor-pointer"
+              onClick={() => setShowPortalsMenu(!showPortalsMenu)}>
               Portals {showPortalsMenu ? <HiChevronUp /> : <HiChevronDown />}
             </p>
 
@@ -91,10 +93,10 @@ function Navbar() {
           <div className="md:hidden absolute top-16 right-0 bg-[#2f007a] w-full">
             <div className="flex flex-col space-y-4 py-4 px-2">
               {/* Portals Menu */}
-              <div
-                className="relative"
-                onClick={() => setShowPortalsMenu(!showPortalsMenu)}>
-                <p className="flex items-center ">
+              <div className="relative">
+                <p
+                  className="flex items-center "
+                  onClick={() => setShowPortalsMenu(!showPortalsMenu)}>
                   Portals{" "}
                   {showPortalsMenu ? <HiChevronUp /> : <HiChevronDown />}
                 </p>
