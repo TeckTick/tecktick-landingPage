@@ -1,5 +1,4 @@
-
-import React from 'react'
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/shared/navbar/Navbar";
 import Footer from "./components/shared/footer/Footer";
@@ -11,7 +10,7 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/tecktick-landingPage" element={<Landingpage />} />
+        <Route path="/tecktick" element={<Landingpage />} />
         <Route path="/about-us" element={<About />} />
       </Routes>
       <Footer />
