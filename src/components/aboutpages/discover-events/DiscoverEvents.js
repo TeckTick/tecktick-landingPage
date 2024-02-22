@@ -9,7 +9,7 @@ const DiscoverEvents = () => {
         Discover related topics
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full mx-auto items-center justify-center gap-[28px] px-5 sm:px-10 md:px-20">
-        <Link>
+        <Link to="/upcoming-events">
           <div className="w-full max-w-[608px] mx-auto ">
             <img
               src={upcoming_events}
@@ -24,7 +24,7 @@ const DiscoverEvents = () => {
           </div>
         </Link>
 
-        <Link>
+        <Link to="/membership-benefits">
           <div className="w-full max-w-[608px] mx-auto ">
             <img
               src={membership_benefits}
