@@ -33,7 +33,7 @@ function Navbar() {
       className={`${navBarColor} flex items-center justify-between px-4 py-2 mx-auto text-white sticky top-0 z-[10] `}>
       {/* Logo */}
       <div className="flex items-center justify-between w-full md:max-w-[1440px] md:container md:flex md:items-center md:justify-between mx-auto">
-        <Link to="/tecktick-landingPage">
+        <Link to="/tecktick">
           <img
             src={logo}
             alt="logo"
