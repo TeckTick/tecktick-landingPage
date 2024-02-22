@@ -24,7 +24,7 @@ const Hero = () => {
       </span>
 
       <h1 className="text-center font-bold text-[24px] sm:text-[32px] md:text-[55px] lg:text-[60px] max-w-[600px] self-center mt-20 mb-32">
-        Grow Better With Teck Tick
+        Grow Better With TeckTick
       </h1>
     </div>
   );
