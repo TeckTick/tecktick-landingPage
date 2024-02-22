@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import logo from "../../../assets/images/Logo.svg";
 import { navLinks, portalLinks } from "../../../data/constants";
@@ -9,6 +9,8 @@ function Navbar() {
   const [showPortalsMenu, setShowPortalsMenu] = useState(false);
   const [navBarColor, setNavBarColor] = useState("bg-[#2f007a]");
   const [overlay, setOverlay] = useState(false);
+
+  const location = useLocation();
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
@@ -27,6 +29,10 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
 
   return (
     <nav
@@ -54,7 +60,11 @@ function Navbar() {
         {/* Portals */}
         <div className="hidden md:flex items-center gap-8">
           <div className="hidden md:flex items-center relative gap-8">
-            <Link to="/tecktick">Home</Link>
+            <Link
+              to="/tecktick"
+              className={`${isActive("/tecktick") ? "border-b-2" : ""}`}>
+              Home
+            </Link>
             <p
               className="flex items-center gap-1 cursor-pointer"
               onClick={() => {
@@ -79,7 +89,10 @@ function Navbar() {
 
             {/* Navigation Links for Medium and Larger Screens */}
             {navLinks.map((link) => (
-              <Link to={link.href} key={link.href}>
+              <Link
+                to={link.href}
+                key={link.href}
+                className={`${isActive(link.href) ? "border-b-2" : ""} `}>
                 {link.name}
               </Link>
             ))}
