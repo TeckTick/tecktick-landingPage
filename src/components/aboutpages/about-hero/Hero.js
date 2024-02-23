@@ -1,6 +1,6 @@
 import React from "react";
 import about_hero from "../../../assets/images/about-hero.svg";
-import { GoChevronRight } from "react-icons/go";
+//import { GoChevronRight } from "react-icons/go";
 
 const Hero = () => {
   return (
@@ -15,13 +15,13 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <span className="flex text-sm gap-1 items-center justify-start mt-5">
+      {/* <span className="flex text-sm gap-1 items-center justify-start mt-5">
         <p>Home</p>
         <p>
           <GoChevronRight />
         </p>
         <p>About us</p>
-      </span>
+      </span> */}
 
       <h1 className="text-center font-bold text-[24px] sm:text-[32px] md:text-[55px] lg:text-[60px] max-w-[600px] self-center mt-20 mb-32">
         Grow Better With TeckTick
