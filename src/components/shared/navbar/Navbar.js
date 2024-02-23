@@ -12,23 +12,23 @@ function Navbar() {
 
   const location = useLocation();
 
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY;
+  // const handleScroll = () => {
+  //   const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 10) {
-      setNavBarColor("bg-[#2f007a]");
-    } else {
-      setNavBarColor(navBarColor);
-    }
-  };
+  //   if (scrollPosition > 10) {
+  //     setNavBarColor("bg-[#2f007a]");
+  //   } else {
+  //     setNavBarColor(navBarColor);
+  //   }
+  // };
 
-  useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   handleScroll();
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const isActive = (path) => {
     return location.pathname === path;
@@ -38,14 +38,26 @@ function Navbar() {
     <nav
       className={`${navBarColor} text-white flex items-center justify-between px-4 py-2 mx-auto sticky top-0 z-[10] font-montserrat`}>
       {/* Logo */}
+
       <div
-        className={`absolute top-0 left-0 right-0 bottom-0 h-screen ${
-          showPortalsMenu ? "md:bg-black/50" : "bg-transparent"
-        } `}
+        className={`hidden md:block md:absolute md:top-0 md:left-0 md:right-0 md:bottom-0 md:h-screen md:w-screen ${
+          showPortalsMenu ? "md:bg-black/50 " : "md:bg-transparent md:hidden"
+        }`}
+        d
         onClick={() => {
-          setOverlay(false);
-          setShowPortalsMenu(false);
+          setOverlay(!overlay);
+          setShowPortalsMenu(!showPortalsMenu);
+        }}></div>
+
+      <div
+        className={`md:hidden block absolute top-0 left-0 right-0 bottom-0 h-screen w-screen ${
+          showMenu ? "bg-black/50 " : "bg-transparent hidden"
+        }`}
+        d
+        onClick={() => {
+          setOverlay(!overlay);
           setShowMenu(!showMenu);
+          setShowPortalsMenu(false);
         }}></div>
 
       <div className="flex items-center justify-between w-full md:max-w-[1440px] md:container md:flex md:items-center md:justify-between mx-auto">
@@ -53,7 +65,7 @@ function Navbar() {
           <img
             src={logo}
             alt="logo"
-            className="w-[40px] h-[auto] rounded-full"
+            className="w-[40px] lg:w-[5rem] h-[auto]"
           />
         </Link>
 
@@ -69,6 +81,7 @@ function Navbar() {
               className="flex items-center gap-1 cursor-pointer"
               onClick={() => {
                 setShowPortalsMenu(!showPortalsMenu);
+                setOverlay(!overlay);
               }}>
               Portals {showPortalsMenu ? <HiChevronUp /> : <HiChevronDown />}
             </p>
@@ -100,13 +113,8 @@ function Navbar() {
         </div>
 
         {/* Hamburger Menu Icon */}
-        <div
-          className="md:hidden"
-          onClick={() => {
-            setShowMenu(!showMenu); // > true
-            setOverlay(true);
-            console.log(showMenu);
-          }}>
+
+        <div className="md:hidden" onClick={() => setShowMenu(!showMenu)}>
           <div>
             <svg
               className="w-6 h-6 text-white"
@@ -125,7 +133,7 @@ function Navbar() {
 
         {/* Responsive Menu */}
         {showMenu && (
-          <div className="md:hidden absolute top-16 right-0 bg-[#2f007a] w-full">
+          <div className="md:hidden absolute top-10 right-0 bg-[#2f007a] w-full">
             <div className="flex flex-col space-y-4 py-4 px-2 pl-10">
               {/* Portals Menu */}
               <Link to="/tecktick" onClick={() => setShowMenu(!showMenu)}>
@@ -134,11 +142,7 @@ function Navbar() {
               <div className="relative">
                 <p
                   className="flex items-center cursor-pointer"
-                  onClick={() => {
-                    setShowPortalsMenu(!showPortalsMenu);
-                    // setOverlay(true);
-                    console.log(showPortalsMenu);
-                  }}>
+                  onClick={() => setShowPortalsMenu(!showPortalsMenu)}>
                   Portals{" "}
                   {showPortalsMenu ? <HiChevronUp /> : <HiChevronDown />}
                 </p>
