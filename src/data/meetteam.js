@@ -4,6 +4,7 @@ import frame276 from "../assets/images/Frame 276.png"
 import Beatrice from "../assets/images/Beatrice2.jpg"
 import Allan from "../assets/images/Allan.jpg"
 import Diana from "../assets/images/Diana.jpg"
+import Joshua from "../assets/images/Joshua.jpg"
 
 const teamdata =[
     {
@@ -25,7 +26,7 @@ const teamdata =[
 
     {
         "id": "3",
-        "image": frame276,
+        "image": Joshua,
         "name":"Joshua Nguku",
         "role":"Designer",
         "linkedin": "https://www.linkedin.com/in/joshua-nguku-51b615252/"
