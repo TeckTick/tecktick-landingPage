@@ -23,7 +23,7 @@
     "swiper": "^11.0.6",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://tecktick.github.io/tecktick",
+  "homepage": "https://tecktick.github.io/tecktick-landingPage",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
