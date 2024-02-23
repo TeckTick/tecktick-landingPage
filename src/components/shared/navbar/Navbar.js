@@ -61,7 +61,7 @@ function Navbar() {
         }}></div>
 
       <div className="flex items-center justify-between w-full md:max-w-[1440px] md:container md:flex md:items-center md:justify-between mx-auto">
-        <Link to="/tecktick">
+        <Link to="/tecktick-landingPage">
           <img
             src={logo}
             alt="logo"
