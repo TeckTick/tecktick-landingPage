@@ -4,7 +4,7 @@ import quotes from '../../../assets/images/Vector.svg';
 const Quotes = () => {
   return (
     <div className='w-full h-[400px] sm:h-[490px] bg-[#2F007A] relative flex justify-center items-center p-[20px] sm:p-[20px] '>
-      <div className='w-[1249px] mx-auto h-[252px] border-blue-800 border-[2.5px] p-[10px] gap-[10px] relative'>
+      <div className='w-[1249px] mx-auto h-[200px] sm:h-[252px] border-blue-800 border-[2.5px] p-[10px] gap-[10px] relative'>
         <div className='absolute left-10 top-[-18px]'>
           <img src={quotes} alt='quotes' className='w-[48px] h-[36px] text-[#FFFFFF]' />
         </div>
