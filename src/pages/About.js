@@ -21,7 +21,7 @@ import Quotes from "../components/aboutpages/quote/Qoutes";
 
 const About = () => {
   return (
-    <div>
+    <>
       <Hero />
       <section className="flex flex-col gap-3">
         <MissionStory
@@ -44,7 +44,7 @@ const About = () => {
       <Meetteam />
       <Quotes />
       <DiscoverEvents />
-    </div>
+    </>
   );
 };
 

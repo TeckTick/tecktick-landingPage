@@ -1,8 +1,8 @@
 export const missionTitle = "Our mission";
 export const missionDescription1 =
-  "Welcome to TeckTick! We are a vibrant community-driven platform decided to fostering innovation, collaboration and creativity.";
+  "Welcome to TeckTick! We are a vibrant community-driven platform dedicated to fostering innovation, collaboration and creativity.";
 export const missionDescription2 =
-  "Our mission is to empower individuals and organizations t connect, learn, and grow together in the ever-evolving tech landscape.";
+  "Our mission is to empower individuals and organizations to connect, learn, and grow together in the ever-evolving tech landscape.";
 
 export const storyTitle = "Our story";
 export const storyDescription1 =
