@@ -49,13 +49,13 @@ function Navbar() {
         }}></div>
 
       <div className="flex items-center justify-between w-full md:max-w-[1440px] md:container md:flex md:items-center md:justify-between mx-auto">
-        <div
-          onClick={(e) => {
-            e.preventDefault();
-            setShowMenu(false);
-          }}>
-          <img src={logo} alt="logo" className="w-[5rem]" />
-        </div>
+        <Link to="/tecktick">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[40px] h-[auto] rounded-full"
+          />
+        </Link>
 
         {/* Portals */}
         <div className="hidden md:flex items-center gap-8">

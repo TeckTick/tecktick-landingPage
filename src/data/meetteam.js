@@ -2,11 +2,13 @@ import frame274 from "../assets/images/Frame 274.png"
 import frame271 from "../assets/images/Frame 271.png"
 import frame275 from "../assets/images/Frame 275.png"
 import frame276 from "../assets/images/Frame 276.png"
+import Beatrice from "../assets/images/Beatrice.jpg"
+import Allan from "../assets/images/Allan.jpg"
 
 const teamdata =[
     {
         "id": "1",
-        "image": frame271,
+        "image": Allan,
         "name":"Allan Ngoma",
         "role":"Founder, Director",
         "linkedin": "https://www.linkedin.com/in/allanmutisya/"
@@ -15,7 +17,7 @@ const teamdata =[
 
     {
         "id": "2",
-        "image": frame274,
+        "image": Beatrice,
         "name":"Beatrice Njoka",
         "role":"Developer",
         "linkedin": "https://www.linkedin.com/in/beatrice-njoka/"
