@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import teamdata from "../../../data/meetteam";
 import { FaLinkedin } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
-import { Link } from 'react-router-dom';
+
 
 const Meetteam = () => {
   // const [startIndex, setStartIndex] = useState(0);
