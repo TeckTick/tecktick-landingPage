@@ -5,6 +5,7 @@ import Beatrice from "../assets/images/Beatrice2.jpg"
 import Allan from "../assets/images/Allan.jpg"
 import Diana from "../assets/images/Diana.jpg"
 import Enock from "../assets/images/Enock.jpg"
+import Hezron from "../assets/images/Hezron.jpg"
 
 const teamdata =[
     {
@@ -44,7 +45,7 @@ const teamdata =[
 
     {
         "id": "5",
-        "image": frame276,
+        "image": Hezron,
         "name":"Hezron Ngoma",
         "role":"Developer",
         "linkedin": "https://www.linkedin.com/in/hezron-ngoma-39293a227/"

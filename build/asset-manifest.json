@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tecktick-landingPage/static/css/main.5164ab68.css",
-    "main.js": "/tecktick-landingPage/static/js/main.c71d660c.js",
+    "main.js": "/tecktick-landingPage/static/js/main.c07967a5.js",
     "static/js/592.988c54fd.chunk.js": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js",
     "static/media/Beatrice2.jpg": "/tecktick-landingPage/static/media/Beatrice2.cc3d434af16fa4fc4293.jpg",
     "static/media/about-hero.svg": "/tecktick-landingPage/static/media/about-hero.77c56245e54eac27115844f32d5495c5.svg",
@@ -31,11 +31,11 @@
     "index.html": "/tecktick-landingPage/index.html",
     "static/media/Vector.svg": "/tecktick-landingPage/static/media/Vector.0686bce803dc4d1ae527f961da369c6c.svg",
     "main.5164ab68.css.map": "/tecktick-landingPage/static/css/main.5164ab68.css.map",
-    "main.c71d660c.js.map": "/tecktick-landingPage/static/js/main.c71d660c.js.map",
+    "main.c07967a5.js.map": "/tecktick-landingPage/static/js/main.c07967a5.js.map",
     "592.988c54fd.chunk.js.map": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5164ab68.css",
-    "static/js/main.c71d660c.js"
+    "static/js/main.c07967a5.js"
   ]
 }
