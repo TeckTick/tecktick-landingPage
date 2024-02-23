@@ -1,9 +1,9 @@
 import frame274 from "../assets/images/Frame 274.png"
 import frame271 from "../assets/images/Frame 271.png"
-import frame275 from "../assets/images/Frame 275.png"
 import frame276 from "../assets/images/Frame 276.png"
-import Beatrice from "../assets/images/Beatrice.jpg"
+import Beatrice from "../assets/images/Beatrice2.jpg"
 import Allan from "../assets/images/Allan.jpg"
+import Diana from "../assets/images/Diana.jpg"
 
 const teamdata =[
     {
@@ -33,7 +33,7 @@ const teamdata =[
 
     {
         "id": "4",
-        "image": frame275,
+        "image": Diana,
         "name":"Diana Duya",
         "role":"Designer",
         "linkedin": "https://www.linkedin.com/in/diana-duya/"
