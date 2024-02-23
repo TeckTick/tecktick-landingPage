@@ -28,40 +28,42 @@ const Meetteam = () => {
   };
 
   return (
-    <div className="w-full bg-[#ECE4FF] mx-auto py-8 relative">
-      <p className="font-semibold text-[44px] font-montserrat text-[#450099] text-center mb-10">
-        Meet The Team
-      </p>
-      <Marquee gradient={false} speed={60} pauseOnHover={true}>
-        <div className="flex flex-row w-full justify-center mb-10">
-          {teamdata.map((item, index) => (
-            <div key={index} className="flex flex-col items-center mx-6">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-[292px] h-[438px] mb-4"
-              />
-              <span className="flex flex-col font-semibold text-[20px] text-center text-[#000000] w-[292px]">
-                <p className=" cursor-pointer">{item.name} </p>
-                <div className="flex items-center  justify-center text-[#5C5C77] font-normal gap-2">
-                  {" "}
-                  <p>{item.role} </p>
-                  <a href={item.linkedin} rel="noreferrer" target="_blank">
-                    <FaLinkedin
-                      size={20}
-                      className="text-[#450099] items-start"
-                      onClick={(e) => handleNameClick(item.linkedin, e)}
-                    />{" "}
-                  </a>
-                </div>
-              </span>
-            </div>
-          ))}
-        </div>
-      </Marquee>
+    <div className="w-full bg-[#ECE4FF] mx-auto ">
+      <section className="max-w-[1440px] container mx-auto py-8 relative">
+        <p className="font-semibold text-[44px] font-montserrat text-[#450099] text-center mb-10">
+          Meet The Team
+        </p>
+        <Marquee gradient={false} speed={60} pauseOnHover={true}>
+          <div className="flex flex-row w-full justify-center mb-10">
+            {teamdata.map((item, index) => (
+              <div key={index} className="flex flex-col items-center mx-6">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-[292px] h-[438px] mb-4"
+                />
+                <span className="flex flex-col font-semibold text-[20px] text-center text-[#000000] w-[292px]">
+                  <p className=" cursor-pointer">{item.name} </p>
+                  <div className="flex items-center  justify-center text-[#5C5C77] font-normal gap-2">
+                    {" "}
+                    <p>{item.role} </p>
+                    <a href={item.linkedin} rel="noreferrer" target="_blank">
+                      <FaLinkedin
+                        size={20}
+                        className="text-[#450099] items-start"
+                        onClick={(e) => handleNameClick(item.linkedin, e)}
+                      />{" "}
+                    </a>
+                  </div>
+                </span>
+              </div>
+            ))}
+          </div>
+        </Marquee>
 
-      {/* <button onClick={handleBack} disabled={startIndex === 0} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-3xl">&#8249;</button>
+        {/* <button onClick={handleBack} disabled={startIndex === 0} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-3xl">&#8249;</button>
       <button onClick={handleNext} disabled={startIndex >= maxStartIndex} className="absolute right-4 top-1/2 transform -translate-y-1/2 text-3xl">&#8250;</button> */}
+      </section>
     </div>
   );
 };

@@ -65,7 +65,7 @@ function Navbar() {
           <img
             src={logo}
             alt="logo"
-            className="w-[40px] lg:w-[5rem] h-[auto]"
+            className="w-[5rem] md:w-[4rem] lg:w-[5rem] h-[auto]"
           />
         </Link>
 
