@@ -13,8 +13,8 @@ const Quotes = () => {
               className="w-[48px] h-[36px] text-[#FFFFFF]"
             />
           </div>
-          <div className="w-full mx-auto h-[120px] flex justify-center items-start">
-            <span className="text-[18px] md:text-[30px] text-[#FFFFFF] font-normal  leading-[30px] md:leading-[60px] font-montserrat text-center md:text-start px-5 my-10 md:ml-28 tracking-tight">
+          <div className="w-full h-[120px] flex justify-center items-start">
+            <span className="text-[18px] md:text-[30px] text-[#FFFFFF] font-normal leading-[30px] md:leading-[60px] font-montserrat text-center md:text-start px-5 my-10 lg:mx-24 xl:mx-40 xl:text-4xl tracking-tight">
               Empowering innovation and fostering collaboration - together, we
               build the future.
             </span>
