@@ -16,7 +16,7 @@ const Footer = () => {
             <h2 className="text-xl border-b lg:border-b-0">Features</h2>
 
             <p>Careers</p>
-            <p>Resources</p>
+            <p>Feedback Form</p>
           </div>
           <div className="flex flex-col gap-3 font-patrick h-full mx-auto items-start md:items-start justify-start ">
             <h2 className="text-xl border-b lg:border-b-0">Product</h2>
@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="flex flex-col gap-3 font-patrick h-full mx-auto items-start md:items-start justify-start ">
             <h2 className="text-xl border-b lg:border-b-0">Customers</h2>
             <p>Our Company</p>
-            <p>Non-Profit</p>
+            <p>Privacy Policy</p>
           </div>
           <div className="flex flex-col gap-3 font-patrick h-full mx-auto items-start md:items-start justify-start ">
             <h2 className="text-xl border-b lg:border-b-0">Resources</h2>
