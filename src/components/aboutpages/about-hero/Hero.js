@@ -5,7 +5,7 @@ import about_hero from "../../../assets/images/about-hero.svg";
 const Hero = () => {
   return (
     <div
-      className="text-white w-full flex flex-col px-5 sm:px-10 md:px-20 font-montserrat "
+      className="text-white w-full flex flex-col px-5 sm:px-10 md:px-20 font-montserrat pt-20"
       style={{
         left: "calc(50% - 1440px/2)",
         top: "0px",

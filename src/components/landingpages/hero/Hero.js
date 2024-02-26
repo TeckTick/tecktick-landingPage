@@ -3,7 +3,7 @@ import hero from "../../../assets/images/hero.svg";
 
 const Hero = () => {
   return (
-    <header className="bg-[#2F007A] text-white pt-10 pb-20 px-5 font-montserrat ">
+    <header className="bg-[#2F007A] text-white pt-20 pb-20 px-5 font-montserrat ">
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center mx-auto w-full gap-8 ">
         <div className="flex flex-col lg:max-w-[600px] w-full gap-6 justify-center items-start lg:mt-10">
           <h1 className="font-bold text-[32px] md:text-[55px] lg:text-[64px]">
