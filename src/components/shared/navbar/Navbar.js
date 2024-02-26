@@ -7,28 +7,21 @@ import { navLinks, portalLinks } from "../../../data/constants";
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [showPortalsMenu, setShowPortalsMenu] = useState(false);
-  const [navBarColor, setNavBarColor] = useState(" backdrop-filter backdrop-blur-lg ");
+
   const [overlay, setOverlay] = useState(false);
+  const [navBarColor, setNavBarColor] = useState("bg-[#2f007a] bg-opacity-10");
 
   const location = useLocation();
 
-  // const handleScroll = () => {
-  //   const scrollPosition = window.scrollY;
-
-  //   if (scrollPosition > 10) {
-  //     setNavBarColor("bg-[#2f007a]");
-  //   } else {
-  //     setNavBarColor(navBarColor);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   handleScroll();
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setNavBarColor("bg-[#2f007a] bg-opacity-100");
+      } else {
+        setNavBarColor("bg-[#2f007a] bg-opacity-10");
+      }
+    });
+  }, []);
 
   const isActive = (path) => {
     return location.pathname === path;
@@ -36,7 +29,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`${navBarColor} text-white flex items-center justify-between px-5  lg:px-14 py-3 mx-auto  top-0 z-[10] font-montserrat w-full fixed `}
+      className={`backdrop-filter backdrop-blur-sm  text-white flex items-center justify-between px-5  lg:px-14 py-3 mx-auto  top-0 z-[10] font-montserrat w-full fixed ${navBarColor}`}
     >
       {/* Logo */}
 
