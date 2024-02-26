@@ -9,7 +9,7 @@ import Marquee from "react-fast-marquee";
 
 const Howitworks = () => {
   return (
-    <div className="p-5 relative overflow-hidden">
+    <div className="p-5  relative overflow-hidden">
       <div className=" items-end justify-center mx-auto w-full h-[128px] my-5 flex">
         <Marquee gradient={false} speed={40} pauseOnHover={true}>
           {partners.map((partner) => (
@@ -26,8 +26,8 @@ const Howitworks = () => {
         >
           How It Works
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 px-5 mx-auto w-full gap-5">
-          <div className="flex flex-col gap-5 items-center justify-start text-center font-inter">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:px-6  mx-auto w-full gap-5">
+          <div className="flex flex-col gap-5 items-center justify-start text-center font-inter ">
             <span className="h-[84px] w-[84px] bg-[#EBE5FF] rounded-lg p-5  lex items-center justify-center">
               <img src={media} alt="" className="object-cover w-full" />
             </span>
