@@ -7,7 +7,7 @@ import { navLinks, portalLinks } from "../../../data/constants";
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [showPortalsMenu, setShowPortalsMenu] = useState(false);
-  const [navBarColor, setNavBarColor] = useState("bg-[#2f007a]");
+  const [navBarColor, setNavBarColor] = useState(" backdrop-filter backdrop-blur-lg ");
   const [overlay, setOverlay] = useState(false);
 
   const location = useLocation();
@@ -36,7 +36,8 @@ function Navbar() {
 
   return (
     <nav
-      className={`${navBarColor} text-white flex items-center justify-between px-4 py-2 mx-auto sticky top-0 z-[10] font-montserrat`}>
+      className={`${navBarColor} text-white flex items-center justify-between px-5  lg:px-14 py-3 mx-auto  top-0 z-[10] font-montserrat w-full fixed `}
+    >
       {/* Logo */}
 
       <div
@@ -47,7 +48,8 @@ function Navbar() {
         onClick={() => {
           setOverlay(!overlay);
           setShowPortalsMenu(!showPortalsMenu);
-        }}></div>
+        }}
+      ></div>
 
       <div
         className={`md:hidden block absolute top-0 left-0 right-0 bottom-0 h-screen w-screen ${
@@ -58,23 +60,25 @@ function Navbar() {
           setOverlay(!overlay);
           setShowMenu(!showMenu);
           setShowPortalsMenu(false);
-        }}></div>
+        }}
+      ></div>
 
       <div className="flex items-center justify-between w-full md:max-w-[1440px] md:container md:flex md:items-center md:justify-between mx-auto">
         <Link to="/tecktick">
           <img
             src={logo}
             alt="logo"
-            className="w-[40px] lg:w-[5rem] h-[auto]"
+            className="w-[40px] lg:w-[5rem] h-[auto] object-cover"
           />
         </Link>
 
         {/* Portals */}
         <div className="hidden md:flex items-center gap-8">
-          <div className="hidden md:flex items-center relative gap-8">
+          <div className="hidden md:flex items-center relative justify-between w-full gap-8 lg:gap-14">
             <Link
               to="/tecktick"
-              className={`${isActive("/tecktick") ? "border-b-2" : ""}`}>
+              className={`${isActive("/tecktick") ? "border-b-2" : ""}`}
+            >
               Home
             </Link>
             <p
@@ -82,7 +86,8 @@ function Navbar() {
               onClick={() => {
                 setShowPortalsMenu(!showPortalsMenu);
                 setOverlay(!overlay);
-              }}>
+              }}
+            >
               Portals {showPortalsMenu ? <HiChevronUp /> : <HiChevronDown />}
             </p>
 
@@ -93,7 +98,8 @@ function Navbar() {
                   <Link
                     to={link.href}
                     key={link.href}
-                    onClick={() => setShowPortalsMenu(!showPortalsMenu)}>
+                    onClick={() => setShowPortalsMenu(!showPortalsMenu)}
+                  >
                     {link.name}
                   </Link>
                 ))}
@@ -105,10 +111,15 @@ function Navbar() {
               <Link
                 to={link.href}
                 key={link.href}
-                className={`${isActive(link.href) ? "border-b-2" : ""} `}>
+                className={`${isActive(link.href) ? "border-b-2" : ""} `}
+              >
                 {link.name}
               </Link>
             ))}
+            {/* Get Started Button */}
+            <button className=" bg-[#95C6E4] px-4 py-2 rounded-[15.78px] text-white">
+              Get Started
+            </button>
           </div>
         </div>
 
@@ -121,12 +132,14 @@ function Navbar() {
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"></path>
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
             </svg>
           </div>
         </div>
@@ -142,7 +155,8 @@ function Navbar() {
               <div className="relative">
                 <p
                   className="flex items-center cursor-pointer"
-                  onClick={() => setShowPortalsMenu(!showPortalsMenu)}>
+                  onClick={() => setShowPortalsMenu(!showPortalsMenu)}
+                >
                   Portals{" "}
                   {showPortalsMenu ? <HiChevronUp /> : <HiChevronDown />}
                 </p>
@@ -153,7 +167,8 @@ function Navbar() {
                       <Link
                         to={link.href}
                         key={link.href}
-                        onClick={() => setShowMenu(!showMenu)}>
+                        onClick={() => setShowMenu(!showMenu)}
+                      >
                         {link.name}
                       </Link>
                     ))}
@@ -164,18 +179,14 @@ function Navbar() {
                 <Link
                   to={link.href}
                   key={link.href}
-                  onClick={() => setShowMenu(!showMenu)}>
+                  onClick={() => setShowMenu(!showMenu)}
+                >
                   {link.name}
                 </Link>
               ))}
             </div>
           </div>
         )}
-
-        {/* Get Started Button */}
-        <button className="hidden md:block bg-[#95C6E4] px-4 py-2 rounded-[15.78px] text-white">
-          Get Started
-        </button>
       </div>
     </nav>
   );
