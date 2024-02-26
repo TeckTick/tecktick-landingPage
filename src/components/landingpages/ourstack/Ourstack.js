@@ -22,12 +22,12 @@ const Ourstack = () => {
     if (!currentTab) return null;
 
     return (
-      <div className="flex flex-col lg:flex-row lg:items-center lg:gap-4 xl:gap-10  w-full h-full bg-[#ECE4FF] md:bg-[#2f007a] lg:bg-[#ECE4FF] rounded-lg">
-        <div className="lg:w-1/2 flex justify-center items-center rounded-lg">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:gap-4 xl:gap-10  w-full h-full bg-[#ECE4FF] md:bg-[#2f007a] lg:bg-[#ECE4FF] rounded-lg p-6 mx-5 md:mx-0 lg:mx-14">
+        <div className="h-full w-full lg:max-h-[474px] lg:max-w-[558px] flex justify-center items-center rounded-lg">
           <img
             src={currentTab.src}
             alt={currentTab.name}
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-full rounded-lg shadow-lg object-cover"
           />
         </div>
         <div className="flex flex-col justify-center items-start p-2 space-y-2 md:w-1/2 h-full rounded-lg sm:text-[#4A4A68] md:text-white lg:text-[#4A4A68] mt-5 font-montserrat">
@@ -35,7 +35,7 @@ const Ourstack = () => {
             <h3 className="text-4xl font-montserrat font-semibold">
               {currentTab.label}
             </h3>
-            <p className="text-base md:text-xl font-montserrat font-normal ">
+            <p className="text-base md:text-xl font-montserrat font-normal max-w-[373px]">
               Explanation of why you are going to love it and the benefit!
             </p>
           </div>
@@ -48,8 +48,8 @@ const Ourstack = () => {
   };
 
   return (
-    <section className="bg-[#2f007a] font-montserrat py-10 lg:pb-[6rem]">
-      <div className="container flex flex-col items-center p-5 space-y-4 mx-auto max-w-[1440px]">
+    <section className="bg-[#2f007a] font-montserrat py-10 lg:pb-[6rem] ">
+      <div className="container flex flex-col items-center space-y-4 mx-auto max-w-[1440px]">
         {/* Features */}
         <div className="text-center h-16 p-4">
           <h2 className="text-4xl font-montserrat font-semibold text-white">
@@ -64,22 +64,24 @@ const Ourstack = () => {
               className={`focus:outline-none text-white text-lg ${
                 activeTab === tab.name ? "border-b-2 border-white" : ""
               }`}
-              onClick={() => handleTabClick(tab.name)}>
+              onClick={() => handleTabClick(tab.name)}
+            >
               {tab.label}
             </button>
           ))}
         </div>
 
-        <div className="flex justify-center items-center w-full md:max-w-[560px] h-[50px] md:justify-between md:hidden">
+        <div className="flex justify-center items-center w-full md:max-w-[560px] h-[50px] md:justify-between md:hidden ">
           <button
             key={activeTab}
             className="focus:outline-none text-white text-lg border-b-2 border-white"
-            onClick={() => handleTabClick(activeTab)}>
+            onClick={() => handleTabClick(activeTab)}
+          >
             {tabs.find((tab) => tab.name === activeTab)?.label}
           </button>
         </div>
 
-        <div className="flex items-center justify-center w-full">
+        <div className="flex items-center justify-center w-full py-3 lg:py-6 ">
           {renderTabContent()}
         </div>
 
@@ -90,7 +92,8 @@ const Ourstack = () => {
               className={`focus:outline-none ${
                 activeTab === tab.name ? "text-white" : ""
               }`}
-              onClick={() => handleTabClick(tab.name)}>
+              onClick={() => handleTabClick(tab.name)}
+            >
               {activeTab === tab.name ? (
                 <LuRectangleHorizontal className="w-[27px] h-[10px] rounded-[15px] bg-white" />
               ) : (
