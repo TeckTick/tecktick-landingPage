@@ -110,7 +110,7 @@ function Navbar() {
               </Link>
             ))}
             {/* Get Started Button */}
-            <button className=" bg-[#95C6E4] px-4 py-2 rounded-[15.78px] text-white">
+            <button className=" bg-[#95C6E4] px-4 py-2 rounded-[15.78px] text-black">
               Get Started
             </button>
           </div>
