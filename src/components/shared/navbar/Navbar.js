@@ -69,9 +69,10 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           <div className="hidden md:flex items-center relative justify-between w-full gap-8 lg:gap-14">
             <Link
-              to="/tecktick"
-              className={`${isActive("/tecktick") ? "border-b-2" : ""}`}
-            >
+
+              to="/tecktick-landingpage"
+              className={`${isActive("/tecktick-landingpage") ? "border-b-2" : ""}`}>
+
               Home
             </Link>
             <p

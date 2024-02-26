@@ -1,4 +1,3 @@
-import frame274 from "../assets/images/Frame 274.png"
 import frame271 from "../assets/images/Frame 271.png"
 import frame276 from "../assets/images/Frame 276.png"
 import Beatrice from "../assets/images/Beatrice2.jpg"
@@ -6,6 +5,8 @@ import Allan from "../assets/images/Allan.jpg"
 import Diana from "../assets/images/Diana.jpg"
 import Enock from "../assets/images/Enock.jpg"
 import Hezron from "../assets/images/Hezron.jpg"
+import Lilian from "../assets/images/Lilian.jpg"
+import Joshua from "../assets/images/Joshua.jpg"
 
 const teamdata =[
     {
@@ -27,7 +28,7 @@ const teamdata =[
 
     {
         "id": "3",
-        "image": frame276,
+        "image": Joshua,
         "name":"Joshua Nguku",
         "role":"Designer",
         "linkedin": "https://www.linkedin.com/in/joshua-nguku-51b615252/"
@@ -53,7 +54,7 @@ const teamdata =[
 
     {
         "id": "6",
-        "image": frame274,
+        "image": Lilian,
         "name":"Lilian Mwende",
         "role":"HR Manager",
         "linkedin": "https://www.linkedin.com/in/lilianmwende/"
