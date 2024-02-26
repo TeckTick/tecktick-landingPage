@@ -9,7 +9,7 @@ import Marquee from "react-fast-marquee";
 
 const Howitworks = () => {
   return (
-    <div className="p-5  relative overflow-hidden">
+    <div className="p-5   overflow-hidden">
       <div className=" items-end justify-center mx-auto w-full h-[128px] my-5 flex">
         <Marquee gradient={false} speed={40} pauseOnHover={true}>
           {partners.map((partner) => (
@@ -82,7 +82,7 @@ const Howitworks = () => {
           </div>
         </div>
       </div>
-      <div className="blur m-5 mx-auto  absolute"></div>
+   
     </div>
   );
 };

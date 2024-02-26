@@ -10,8 +10,7 @@ const Hero = () => {
             Teamwork Makes the Dream Work
           </h1>
           <p className="text-xl">
-            Tell the world how awesome your site is and why they should use it!!
-            Tell the world how awesome your site is and why they should use it!!
+            Level Up Your Curiosity Game, Warp into TeckTick's Universe!
           </p>
           <span className="flex flex-col gap-2.5 sm:flex-row mt-3 ">
             <button className="bg-[#95C6E4] font-semibold text-[#450099] rounded-[15px] w-[90vw] h-[44px] sm:w-[213px] sm:h-[64px] mx-auto sm:mx-0">

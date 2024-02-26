@@ -10,7 +10,7 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/tecktick" element={<Landingpage />} />
+        <Route path="/tecktick-landingPage" element={<Landingpage />} />
         <Route path="/about-us" element={<About />} />
       </Routes>
       <Footer />
