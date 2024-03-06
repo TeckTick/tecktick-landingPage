@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import logo from "../../../assets/images/Logo.svg";
 import { navLinks, portalLinks } from "../../../data/constants";
@@ -9,24 +9,35 @@ function Navbar() {
   const [showPortalsMenu, setShowPortalsMenu] = useState(false);
 
   const [overlay, setOverlay] = useState(false);
-  const [navBarColor, setNavBarColor] = useState("bg-[#2f007a] bg-opacity-10");
+  const [navBarColor, setNavBarColor] = useState("bg-[#2f007a] bg-opacity-100");
 
   const location = useLocation();
 
+  const setColor = (path) => {
+    if (path === "/about-us") {
+      setNavBarColor("bg-[#2f007a] bg-opacity-10");
+    } else {
+      setNavBarColor("bg-[#2f007a] bg-opacity-100");
+    }
+  };
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        setNavBarColor("bg-[#2f007a] bg-opacity-100");
-      } else {
-        setNavBarColor("bg-[#2f007a] bg-opacity-10");
-      }
-    });
-  }, []);
+    setColor(location.pathname);
+  }, [location]);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      setNavBarColor("bg-[#2f007a] bg-opacity-100");
+    } else {
+      setColor(location.pathname);
+    }
+  });
 
   const isActive = (path) => {
     return location.pathname === path;
   };
 
+  console.log(location.pathname);
   return (
     <nav
       className={`backdrop-filter backdrop-blur-sm  text-white flex items-center justify-between px-5  lg:px-14 py-3 mx-auto  top-0 z-[10] font-montserrat w-full fixed ${navBarColor}`}
@@ -69,10 +80,11 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           <div className="hidden md:flex items-center relative justify-between w-full gap-8 lg:gap-14">
             <Link
-
               to="/tecktick-landingpage"
-              className={`${isActive("/tecktick-landingpage") ? "border-b-2" : ""}`}>
-
+              className={`${
+                isActive("/tecktick-landingpage") ? "border-b-2" : ""
+              }`}
+            >
               Home
             </Link>
             <p
