@@ -37,7 +37,7 @@ function Navbar() {
     return location.pathname === path;
   };
 
-  console.log(location.pathname);
+ 
   return (
     <nav
       className={`backdrop-filter backdrop-blur-sm  text-white flex items-center justify-between px-5  lg:px-14 py-3 mx-auto  top-0 z-[10] font-montserrat w-full fixed ${navBarColor}`}
