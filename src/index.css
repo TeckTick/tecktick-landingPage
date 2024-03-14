@@ -247,3 +247,54 @@ nav img{
   align-items: center;
   padding: 20px;
 }
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 7em;
+  padding-top: 2em;
+}
+
+.text h1 {
+  color: #0F70EB;
+  line-height: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+.text p{
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+    font-size: 12px;
+  padding: 10px;
+}
+
+.text > div{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.text > div p{
+  text-transform: uppercase;
+
+}
+.text input {
+  
+  border: 0.05px solid black;
+  width: 500px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.Mfooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px;
+  opacity: 0.5;
+}
+
+
+.Mfooter .social-media{
+}
