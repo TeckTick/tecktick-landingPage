@@ -1,5 +1,6 @@
 import React from 'react'
 import avator from "../assets/Avatar.png";
+
 const TestmonialCard = () => {
   return (
     <div className="bg-white rounded-lg p-5 w-full max-w-[745px] text-center mx-auto">

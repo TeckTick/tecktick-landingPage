@@ -6,6 +6,7 @@ import Testimonials from "./Testimonials";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 import OurPartners from "./OurPartners";
+import Maintain from "./Maintain"
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
       <Herosection />
       <OurPartners />
       <Features /> */}
+      <Maintain />
       <Testimonials />
       <Newsletter />
       <Footer />
