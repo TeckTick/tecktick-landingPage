@@ -1,12 +1,17 @@
 import React from "react";
-import Hero from "../components/blogpages/blog-hero/Hero";
-import Featured from "../components/blogpages/featured/Featured";
+import ComingSoon from "./ComingSoon";
+// import Hero from "../components/blogpages/blog-hero/Hero";
+// import Featured from "../components/blogpages/featured/Featured";
+// import Article from "../components/blogpages/articles/Article";
 
 const Blog = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero />
       <Featured />
+      <Article /> */}
+
+      <ComingSoon/>
     </div>
   );
 };
