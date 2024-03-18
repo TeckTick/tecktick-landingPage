@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/tecktick-landingPage/static/css/main.5164ab68.css",
-    "main.js": "/tecktick-landingPage/static/js/main.003aacbe.js",
+    "main.css": "/tecktick-landingPage/static/css/main.5fabff56.css",
+    "main.js": "/tecktick-landingPage/static/js/main.c3e10ad7.js",
     "static/js/592.988c54fd.chunk.js": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js",
     "static/media/Beatrice2.jpg": "/tecktick-landingPage/static/media/Beatrice2.cc3d434af16fa4fc4293.jpg",
     "static/media/about-hero.svg": "/tecktick-landingPage/static/media/about-hero.77c56245e54eac27115844f32d5495c5.svg",
     "static/media/Frame 4.png": "/tecktick-landingPage/static/media/Frame 4.019dc8f19ffc519e6163.png",
     "static/media/Frame 241.png": "/tecktick-landingPage/static/media/Frame 241.8d21a3686877d652f5e3.png",
     "static/media/Frame 3.png": "/tecktick-landingPage/static/media/Frame 3.bc85717d6c06eec173c7.png",
+    "static/media/Joshua.jpg": "/tecktick-landingPage/static/media/Joshua.55dd9471c3dcc4ccc5a0.jpg",
     "static/media/Frame 239.png": "/tecktick-landingPage/static/media/Frame 239.5eb4451a9dda99c43249.png",
     "static/media/upcoming-events.png": "/tecktick-landingPage/static/media/upcoming-events.908ee8f6261bb6e39e4a.png",
     "static/media/Enock.jpg": "/tecktick-landingPage/static/media/Enock.8b31de798c01a99ca1ed.jpg",
-    "static/media/Frame 274.png": "/tecktick-landingPage/static/media/Frame 274.3f3e8aa5cc035e144090.png",
     "static/media/Frame 271.png": "/tecktick-landingPage/static/media/Frame 271.2d01dfb93da4e4a3d367.png",
     "static/media/WhatsApp Image 2024-01-29 at 18.40 1.jpg": "/tecktick-landingPage/static/media/WhatsApp Image 2024-01-29 at 18.40 1.b4a2a4d6f56eb8d8571c.jpg",
     "static/media/Frame 276.png": "/tecktick-landingPage/static/media/Frame 276.95b2ad154464147f12dd.png",
     "static/media/Hezron.jpg": "/tecktick-landingPage/static/media/Hezron.cd30557636f65a25d719.jpg",
     "static/media/membership-benefits.png": "/tecktick-landingPage/static/media/membership-benefits.fb6b320177cc06499157.png",
     "static/media/Diana.jpg": "/tecktick-landingPage/static/media/Diana.130661e1878a9bd91113.jpg",
+    "static/media/comingsoon.png": "/tecktick-landingPage/static/media/comingsoon.63d8985ddc0764555ed6.png",
     "static/media/hero.svg": "/tecktick-landingPage/static/media/hero.b9e34623cec6ed3a111d84f9c16c79a2.svg",
     "static/media/Allan.jpg": "/tecktick-landingPage/static/media/Allan.5cdc6212cc4caf813f98.jpg",
     "static/media/Logo.svg": "/tecktick-landingPage/static/media/Logo.b2a28d22596130e2ba3e6775cedac67c.svg",
+    "static/media/Lilian.jpg": "/tecktick-landingPage/static/media/Lilian.55269ee116cc46fbebd0.jpg",
     "static/media/Avatar.png": "/tecktick-landingPage/static/media/Avatar.533e8683118e173ff71a.png",
     "static/media/deloitte.svg": "/tecktick-landingPage/static/media/deloitte.2f5904d59d157c6bb7ac429aef22e78f.svg",
     "static/media/unilever.svg": "/tecktick-landingPage/static/media/unilever.ddaf258939f08019e3ad89e55ed7291d.svg",
@@ -31,12 +33,12 @@
     "static/media/notification.svg": "/tecktick-landingPage/static/media/notification.d6758ba6a24050618f42b949bad76c7a.svg",
     "index.html": "/tecktick-landingPage/index.html",
     "static/media/Vector.svg": "/tecktick-landingPage/static/media/Vector.0686bce803dc4d1ae527f961da369c6c.svg",
-    "main.5164ab68.css.map": "/tecktick-landingPage/static/css/main.5164ab68.css.map",
-    "main.003aacbe.js.map": "/tecktick-landingPage/static/js/main.003aacbe.js.map",
+    "main.5fabff56.css.map": "/tecktick-landingPage/static/css/main.5fabff56.css.map",
+    "main.c3e10ad7.js.map": "/tecktick-landingPage/static/js/main.c3e10ad7.js.map",
     "592.988c54fd.chunk.js.map": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5164ab68.css",
-    "static/js/main.003aacbe.js"
+    "static/css/main.5fabff56.css",
+    "static/js/main.c3e10ad7.js"
   ]
 }
