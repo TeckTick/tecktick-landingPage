@@ -9,6 +9,12 @@ const Layout = ({ children }) => {
     "/signup",
     "/login",
     "/forgot-password",
+    "/events",
+    "/community",
+    "/hackathons",
+    "/merchandise",
+    "/gallery",
+    "/blog",
   ].includes(location.pathname);
 
   return (
