@@ -63,15 +63,4 @@
   }
 }
 
-.blur {
-  position: absolute;
-  width: 95%;
-  height: 150px;
-  border-radius: 50%;
-  background: #d1d1d1;
-  filter: blur(212px);
-  z-index: 0;
-  top: 0;
-  right: 0;
-  filter: blur(72px);
-}
+
