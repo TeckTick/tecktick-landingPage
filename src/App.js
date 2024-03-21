@@ -11,7 +11,11 @@ import Community from "./portals/Community";
 import Hackathons from "./portals/Hackathons";
 import Merchandise from "./portals/Merchandise";
 import Gallery from "./portals/Gallery";
+
 import Signup from "./pages/Signup";
+
+// import ResetPassword from "./pages/ResetPassword";
+
 
 const App = () => {
   return (
@@ -27,6 +31,10 @@ const App = () => {
         <Route path="/community" element={<Community />} />
         <Route path="/merchandise" element={<Merchandise />} />
         <Route path="/gallery" element={<Gallery />} />
+
+
+        // <Route path="/reset-password" element={<ResetPassword />} />
+
       </Routes>
       <Layout />
     </>
