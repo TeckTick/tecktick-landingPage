@@ -22,7 +22,7 @@ const Signup = () => {
           <div className="flex justify-end mb-[4rem] lg:mb-0 ">
             <p className=" text-[#7A86A1] font-manrope font-semibold ">
               Already a member?
-              <Link to="/signin" className="text-[#6149CD]">
+              <Link to="/sign-in" className="text-[#6149CD]">
                 {" "}
                 Sign in
               </Link>

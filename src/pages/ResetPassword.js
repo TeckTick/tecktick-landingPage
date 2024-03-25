@@ -51,7 +51,7 @@ const ResetPassword = () => {
               </button>
             </form>
             <Link
-              to="/login"
+              to="/sign-in"
               className="text-blue-500 mt-5 flex items-center gap-2 text-sm"
             >
               <FaChevronLeft />

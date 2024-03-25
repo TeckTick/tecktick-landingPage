@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { FaGoogle, FaFacebook } from "react-icons/fa";
 import signup from "../assets/images/big image.png";
+// import Signup from "./Signup"
+// import ResetPassword from './ResetPassword';
 
 const Signin = () => {
   return (
@@ -22,7 +24,7 @@ const Signin = () => {
         <div className="flex justify-end mb-[4rem] lg:mb-0 ">
           <p className=" text-[#7A86A1] font-manrope font-semibold ">
             New user?
-            <Link to="/signin" className="text-[#6149CD]">
+            <Link to="/signup" className="text-[#6149CD]">
               {" "}
               Create an account
             </Link>
@@ -81,18 +83,21 @@ const Signin = () => {
             <div className="flex gap-3">
               <input
                 type="checkbox"
-                id="terms&conditions"
-                name="terms&conditions"
+                id="remember me"
+                name="remember me"
                 value="terms"
               />
               <label
-                htmlFor="terms&conditions"
+                htmlFor="remember me"
                 className="text-[#7A86A1] font-semibold mr-6">
                 Remember Me{" "}
-                <span className="text-[#6149CD] ml-6 cursor-pointer">
-                  Forgot Password?
-                </span>
               </label>
+
+              <Link to="/forgot-password" className="text-[#6149CD]">
+              {" "}
+              Forgot Password?
+            </Link>
+                
             </div>
 
             <button className="w-full md:w-[299px] py-3 bg-[#2F007A] text-white font-semibold rounded-3xl md:mt-[2rem] mt-[2rem] mb-[4rem] ">
