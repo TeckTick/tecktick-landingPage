@@ -11,6 +11,7 @@ import Hackathons from "./portals/Hackathons"
 import Merchandise from "./portals/Merchandise"
 import Gallery from "./portals/Gallery"
 
+
 const App = () => {
   return (
     <>
@@ -25,7 +26,8 @@ const App = () => {
         <Route path="/merchandise" element={ <Merchandise />} />
         <Route path="/gallery" element={ <Gallery />} />
       </Routes>
-      <Footer />
+      <Footer /> 
+     
     </>
   );
 };
