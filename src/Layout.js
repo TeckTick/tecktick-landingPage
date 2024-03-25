@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
     "/merchandise",
     "/gallery",
     "/blog",
+    "/sign-in"
   ].includes(location.pathname);
 
   return (

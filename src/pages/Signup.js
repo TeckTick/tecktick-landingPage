@@ -35,7 +35,11 @@ const Signup = () => {
                 Create Your Account
               </h4>
               <div className="flex flex-col gap-5 md:flex-row md:items-center w-full">
-                <button className=" md:w-[358px] h-[55px] bg-[#2F007A] text-white flex items-center justify-center gap-3 rounded-3xl font-semibold cursor-pointer">
+                <button 
+                 style={{
+                  boxShadow: `3.99399995803833px 22.650999069213867px 57px 0px #F9676742`,
+                }} 
+                className=" md:w-[358px] h-[55px] bg-[#2F007A] text-white flex items-center justify-center gap-3 rounded-3xl font-semibold cursor-pointer">
                   <FaGoogle size={20} />
                   Sign Up with Google
                 </button>

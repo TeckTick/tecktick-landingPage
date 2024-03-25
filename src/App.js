@@ -11,6 +11,7 @@ import Merchandise from "./portals/Merchandise";
 import Gallery from "./portals/Gallery";
 import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
+import Signin from "./pages/Signin";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/signup" element={<Signup />} />
+          <Route path="/sign-in" element={<Signin />} />
           <Route path="/tecktick-landingPage" element={<Landingpage />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/blog" element={<Blog />} />
