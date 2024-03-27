@@ -4,23 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        jost: ["Jost", "sans-serif"],
-        Manrope: ["Manrope", "sans-serif"],
-      },
-    },
-  },
-  plugins: [],
-};
-
-import withMT from "@material-tailwind/react/utils/withMT";
-
-export default withMT({
-  content: [],
-  theme: {
-    extend: {
-      fontFamily: {
         inter: ["Inter"],
         roboto: ["Roboto"],
+        jost: ["Jost", "sans-serif"],
+        Manrope: ["Manrope", "sans-serif"],
+        spartan: ["League Spartan"],
       },
       colors: {
         dark: "#0d1117",
@@ -28,4 +16,22 @@ export default withMT({
     },
   },
   plugins: [],
-});
+};
+
+// import withMT from "@material-tailwind/react/utils/withMT";
+
+// export default withMT({
+//   content: [],
+//   theme: {
+//     extend: {
+//       fontFamily: {
+//         inter: ["Inter"],
+//         roboto: ["Roboto"],
+//       },
+//       colors: {
+//         dark: "#0d1117",
+//       },
+//     },
+//   },
+//   plugins: [],
+// });
