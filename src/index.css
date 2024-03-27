@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Inter:wght@400..900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Patrick+Hand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
 * {
   scroll-behavior: smooth;
@@ -25,6 +26,9 @@
   transition: background-color 0.3s ease; /* Add a transition for smoothness */
 }
 
+.btn-red-shadow {
+  box-shadow: 0px 20px 20px 0px rgba(217, 61, 89, 0.2);
+}
 /* .w-full:hover{
     color: blue;
 } */
@@ -72,6 +76,7 @@
     display: none !important;
   }
 }
+
 
 .custom-bg {
   background-image: repeating-linear-gradient(

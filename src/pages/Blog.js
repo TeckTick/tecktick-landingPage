@@ -11,7 +11,7 @@ const Blog = () => {
       <Featured />
       <Article /> */}
 
-      <ComingSoon/>
+      <ComingSoon />
     </div>
   );
 };
