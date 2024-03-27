@@ -76,3 +76,16 @@
     display: none !important;
   }
 }
+
+
+.custom-bg {
+  background-image: repeating-linear-gradient(
+    135deg,
+    #f1f1f8 0,
+    #f2f2ff 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 14px 14px;
+  background-color: #ffffff;
+}

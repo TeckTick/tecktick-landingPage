@@ -5,7 +5,7 @@ import { FaChevronLeft } from "react-icons/fa";
 
 const ResetPassword = () => {
   return (
-    <div className="w-full h-screen mt-14 bg-white opacity-100">
+    <div className="w-full  h-screen bg-white opacity-100">
       <div className="flex justify-center align-center flex-col lg:flex-row h-full md:max-h-[874px]">
         <div
           style={{
@@ -16,7 +16,7 @@ const ResetPassword = () => {
           }}
           className=" w-full h-full min-h-[375px]  lg:w-[46%] items-start flex justify-start py-20"
         >
-          <p className="lg:max-w-[542px] w-full font-bold text-white text-[30px] md:text-[46px] mx-5 lg:mx-auto pt-5 ">
+          <p className="lg:max-w-[542px] w-full font-bold text-white text-[30px] md:text-[46px] mx-5 lg:mx-auto pt-5 mt-14 lg:mt-0">
             Join our community and learn from our Proficient authors
           </p>
         </div>
