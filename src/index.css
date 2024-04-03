@@ -69,6 +69,15 @@
   height: 12px !important;
 }
 
+.line {
+  border-bottom: 1px solid #000;
+}
+
+.carouselbg{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+
+}
+
 /* hide swiper buttons on small screens */
 @media (max-width: 950px) {
   .swiper-button-next,
