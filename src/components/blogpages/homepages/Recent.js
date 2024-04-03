@@ -78,6 +78,9 @@ const Recent = () => {
                 <p className='font-jost font-medium text-xl text-[#000000]'>how not to get lost without knowing the language</p>
               </div>
             </div>
+            <button className="font-spartan font-semibold text-white uppercase bg-gradient-to-r from-[#2F007A] to-[#4698CA] btn-red-shadow h-[60px] w-[201px] rounded-full mt-8 tracking-widest">
+                  View All
+                </button>
           </div>
         </div>
       </div>
