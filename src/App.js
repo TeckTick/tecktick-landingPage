@@ -12,6 +12,7 @@ import Gallery from "./portals/Gallery";
 import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
 import Signin from "./pages/Signin";
+import Post from "./pages/Post";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/merchandise" element={<Merchandise />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/forgot-password" element={<ResetPassword />} />
+          <Route path="/post" element={<Post />} />
         </Routes>
       </Layout>
     </>
