@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tecktick-landingPage/static/css/main.2e3fd380.css",
-    "main.js": "/tecktick-landingPage/static/js/main.81ac0512.js",
+    "main.css": "/tecktick-landingPage/static/css/main.aaca1c75.css",
+    "main.js": "/tecktick-landingPage/static/js/main.8c9a07fd.js",
     "static/js/592.988c54fd.chunk.js": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js",
     "static/media/Beatrice2.jpg": "/tecktick-landingPage/static/media/Beatrice2.cc3d434af16fa4fc4293.jpg",
     "static/media/bgsignup.png": "/tecktick-landingPage/static/media/bgsignup.21947070dd896989237a.png",
@@ -24,9 +24,11 @@
     "static/media/comingsoon.png": "/tecktick-landingPage/static/media/comingsoon.63d8985ddc0764555ed6.png",
     "static/media/hero.svg": "/tecktick-landingPage/static/media/hero.b9e34623cec6ed3a111d84f9c16c79a2.svg",
     "static/media/Allan.jpg": "/tecktick-landingPage/static/media/Allan.5cdc6212cc4caf813f98.jpg",
+    "static/media/BG.png": "/tecktick-landingPage/static/media/BG.5e27fb4129b05b511223.png",
     "static/media/Logo.svg": "/tecktick-landingPage/static/media/Logo.b2a28d22596130e2ba3e6775cedac67c.svg",
     "static/media/Lilian.jpg": "/tecktick-landingPage/static/media/Lilian.55269ee116cc46fbebd0.jpg",
     "static/media/Avatar.png": "/tecktick-landingPage/static/media/Avatar.533e8683118e173ff71a.png",
+    "static/media/quote.png": "/tecktick-landingPage/static/media/quote.d1f67550b12c437abcf3.png",
     "static/media/deloitte.svg": "/tecktick-landingPage/static/media/deloitte.2f5904d59d157c6bb7ac429aef22e78f.svg",
     "static/media/unilever.svg": "/tecktick-landingPage/static/media/unilever.ddaf258939f08019e3ad89e55ed7291d.svg",
     "static/media/community.svg": "/tecktick-landingPage/static/media/community.8f22fa55cdfd7d0cd3fa39341dd393c8.svg",
@@ -36,12 +38,12 @@
     "static/media/notification.svg": "/tecktick-landingPage/static/media/notification.d6758ba6a24050618f42b949bad76c7a.svg",
     "index.html": "/tecktick-landingPage/index.html",
     "static/media/Vector.svg": "/tecktick-landingPage/static/media/Vector.0686bce803dc4d1ae527f961da369c6c.svg",
-    "main.2e3fd380.css.map": "/tecktick-landingPage/static/css/main.2e3fd380.css.map",
-    "main.81ac0512.js.map": "/tecktick-landingPage/static/js/main.81ac0512.js.map",
+    "main.aaca1c75.css.map": "/tecktick-landingPage/static/css/main.aaca1c75.css.map",
+    "main.8c9a07fd.js.map": "/tecktick-landingPage/static/js/main.8c9a07fd.js.map",
     "592.988c54fd.chunk.js.map": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e3fd380.css",
-    "static/js/main.81ac0512.js"
+    "static/css/main.aaca1c75.css",
+    "static/js/main.8c9a07fd.js"
   ]
 }
