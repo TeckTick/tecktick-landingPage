@@ -6,6 +6,7 @@ import Hotstuff from "../components/blogpages/homepages/Hotstuff";
 import Topoftheweek from "../components/blogpages/homepages/Topoftheweek";
 import Mostread from "../components/blogpages/homepages/Mostread";
 import Carousel from "../components/blogpages/homepages/Carousel";
+import Newletters from "../components/blogpages/homepages/Newletters";
 
 const Blog = () => {
   return (
@@ -16,6 +17,7 @@ const Blog = () => {
       <Popular/>
       <Ad/>
       <Mostread/>
+      <Newletters/>
       <Hotstuff/>
       <Topoftheweek/>
     </div>
