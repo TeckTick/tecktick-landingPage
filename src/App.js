@@ -13,6 +13,7 @@ import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
 import Signin from "./pages/Signin";
 import Post from "./pages/Post";
+import Blogs from "./pages/Blogs";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/tecktick-landingPage" element={<Landingpage />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/events" element={<Events />} />
           <Route path="/hackathons" element={<Hackathons />} />
           <Route path="/community" element={<Community />} />
