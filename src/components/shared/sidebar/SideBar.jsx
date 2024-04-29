@@ -1,13 +1,15 @@
 import React from "react";
 import { HiSearch } from "react-icons/hi";
-import { FaRegComment } from "react-icons/fa";
 import {
   SlSocialLinkedin,
   SlSocialTwitter,
   SlSocialFacebook,
   SlSocialInstagram,
 } from "react-icons/sl";
-import { stories, posts, categories } from "../../../data/sidebar-data";
+import { categories } from "../../../data/sidebar-data";
+import PopularPost from "../../blogpages/PopularPost/PopularPost";
+import { bloghome } from "../../../data/bloghome.js";
+import RecentStories from "../../blogpages/RecentStories/RecentStories.jsx";
 
 const SideBar = () => {
   const socialIcons = [
@@ -36,6 +38,7 @@ const SideBar = () => {
       id: "twitter",
     },
   ];
+
   return (
     <section className="w-[310px] h-[2250px] flex flex-col gap-[3.5rem]">
       <form className="flex items-center gap-5 font-spartan">
@@ -49,26 +52,13 @@ const SideBar = () => {
         </button>
       </form>
 
-      <article>
-        <h5 className="font-jost font-[500] text-3xl mb-4 ">Recent Stories</h5>
-        <div className="flex flex-col gap-5">
-          {stories.map((story) => (
-            <article key={story.id}>
-              <img src={story.image} alt={story.image} />
-              <div className="pt-2 flex items-center gap-2 uppercase text-[#555555] font-spartan ">
-                <p>{story.date}</p>
-                <div className="h-[2px] w-[10px] bg-black"></div>
-                <p>#{story.category}</p>
-              </div>
-              <div className="w-full h-[1px] bg-[#DDDDDD]"></div>
-              <h4 className="py-3 font-jost font-[500] text-xl capitalize">
-                {story.title}
-              </h4>
-            </article>
-          ))}
-        </div>
-      </article>
+      <RecentStories
+        posts={bloghome}
+        numberOfPosts={2}
+        title={"Recent Stories"}
+      />
 
+      {/* Categories */}
       <div>
         <h5 className="font-jost font-[500] text-3xl mb-4 ">Categories</h5>
         <div className="flex flex-wrap gap-[10px] font-spartan font-medium">
@@ -102,32 +92,12 @@ const SideBar = () => {
         </div>
       </div>
 
-      <article>
-        <h4 className="font-jost font-[500] text-3xl mb-4">Popular Posts</h4>
-        <div className="flex flex-col gap-3 divide-y">
-          {posts.map((post) => (
-            <article className="flex gap-3">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="size-[90px] object-cover"
-              />
-              <div className="flex flex-col justify-between ">
-                <h6 className="font-jost font-[500] text-xl leading-[24px] capitalize ">
-                  {post.title}
-                </h6>
-                <div className="flex items-center gap-2 text-[12px] font-spartan uppercase text-[#555555]">
-                  <p>{post.date}</p>
-                  <div className="h-[2px] w-[10px] bg-black"></div>
-                  <p className="flex items-center gap-1">
-                    <FaRegComment /> {post.comments}
-                  </p>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </article>
+      <PopularPost
+        posts={bloghome}
+        numberOfPosts={3}
+        category={false}
+        title={"Popular Posts"}
+      />
     </section>
   );
 };

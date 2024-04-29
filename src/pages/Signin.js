@@ -1,11 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaGoogle, FaFacebook } from "react-icons/fa";
 import signup from "../assets/images/big image.png";
+import axios from "axios";
 // import Signup from "./Signup"
 // import ResetPassword from './ResetPassword';
 
 const Signin = () => {
+  const [formData, setFormData] = useState({
+    password: "",
+    email: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(formData);
+    try {
+      const response = await axios.post(
+        "http://127.0.0.1:8000/user/register/",
+        formData
+      );
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <section>
       <section className="max-w-[1920px] container mx-auto xl:flex ">
@@ -32,7 +59,9 @@ const Signin = () => {
           </div>
 
           <div className="flex lg:h-[100%] xl:h-full xl:w-full xl:m-auto h-full items-center justify-center">
-            <form className="lg:w-[620px] lg:h-[594px] md:w-[620px] w-full h-full flex flex-col  justify-center font-manrope">
+            <form
+              onSubmit={handleSubmit}
+              className="lg:w-[620px] lg:h-[594px] md:w-[620px] w-full h-full flex flex-col  justify-center font-manrope">
               <h4 className="font-jost font-bold sm:text-3xl mb-[1.5rem] text-[30px] text-center sm:text-left">
                 Sign In
               </h4>
@@ -59,8 +88,11 @@ const Signin = () => {
                   <input
                     id="email"
                     type="email"
+                    name="email"
+                    value={formData.email}
                     placeholder="JohnDoe@gmail.com"
                     className="md:w-[298px] border-2 border-[#EBEBEB] rounded-3xl px-5 py-3 "
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col gap-3 w-full md:w-auto">
@@ -69,9 +101,12 @@ const Signin = () => {
                   </label>
                   <input
                     id="password"
+                    name="password"
                     type="password"
+                    value={formData.password}
                     placeholder="Enter password"
                     className="md:w-[298px] border-2 border-[#EBEBEB] rounded-3xl px-5 py-3 "
+                    onChange={handleChange}
                   />
                 </div>
               </div>
