@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/tecktick-landingPage/static/css/main.e93df2e3.css",
-    "main.js": "/tecktick-landingPage/static/js/main.f7ff267c.js",
+    "main.css": "/tecktick-landingPage/static/css/main.40607233.css",
+    "main.js": "/tecktick-landingPage/static/js/main.ab034a07.js",
     "static/js/592.988c54fd.chunk.js": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js",
     "static/media/Beatrice2.jpg": "/tecktick-landingPage/static/media/Beatrice2.cc3d434af16fa4fc4293.jpg",
+    "static/media/pexels-city.jpg": "/tecktick-landingPage/static/media/pexels-city.837681d0d6c23c6015dc.jpg",
+    "static/media/pexels-road.jpg": "/tecktick-landingPage/static/media/pexels-road.5c8a6d3a06b05d4d505d.jpg",
+    "static/media/pexels-pets.jpg": "/tecktick-landingPage/static/media/pexels-pets.e1f148f949467772f8eb.jpg",
+    "static/media/essentials.jpg": "/tecktick-landingPage/static/media/essentials.0571dbd883255121bf48.jpg",
+    "static/media/sunset.jpg": "/tecktick-landingPage/static/media/sunset.3af6bd7cb7504a770ab8.jpg",
+    "static/media/pexels-map.jpg": "/tecktick-landingPage/static/media/pexels-map.85d40b27bd89e1e1e04a.jpg",
     "static/media/bgsignup.png": "/tecktick-landingPage/static/media/bgsignup.21947070dd896989237a.png",
     "static/media/big image.png": "/tecktick-landingPage/static/media/big image.36e58a60fda939a978ce.png",
+    "static/media/pexels-garden.jpg": "/tecktick-landingPage/static/media/pexels-garden.5ff5b7b7957ed59227f7.jpg",
     "static/media/reset-password.png": "/tecktick-landingPage/static/media/reset-password.3587f29535153f38fbd2.png",
-    "static/media/article-banner.png": "/tecktick-landingPage/static/media/article-banner.4d848fe4abd2192d1f08.png",
+    "static/media/plants.jpg": "/tecktick-landingPage/static/media/plants.175c11ffb407f307a2a4.jpg",
     "static/media/about-hero.svg": "/tecktick-landingPage/static/media/about-hero.77c56245e54eac27115844f32d5495c5.svg",
     "static/media/Frame 4.png": "/tecktick-landingPage/static/media/Frame 4.019dc8f19ffc519e6163.png",
     "static/media/Frame 241.png": "/tecktick-landingPage/static/media/Frame 241.8d21a3686877d652f5e3.png",
     "static/media/Frame 3.png": "/tecktick-landingPage/static/media/Frame 3.bc85717d6c06eec173c7.png",
     "static/media/Joshua.jpg": "/tecktick-landingPage/static/media/Joshua.55dd9471c3dcc4ccc5a0.jpg",
     "static/media/Frame 239.png": "/tecktick-landingPage/static/media/Frame 239.5eb4451a9dda99c43249.png",
-    "static/media/featured1.png": "/tecktick-landingPage/static/media/featured1.32d0672918d29d3fcb5e.png",
     "static/media/upcoming-events.png": "/tecktick-landingPage/static/media/upcoming-events.908ee8f6261bb6e39e4a.png",
     "static/media/Enock.jpg": "/tecktick-landingPage/static/media/Enock.8b31de798c01a99ca1ed.jpg",
     "static/media/Frame 271.png": "/tecktick-landingPage/static/media/Frame 271.2d01dfb93da4e4a3d367.png",
@@ -40,12 +46,12 @@
     "static/media/notification.svg": "/tecktick-landingPage/static/media/notification.d6758ba6a24050618f42b949bad76c7a.svg",
     "index.html": "/tecktick-landingPage/index.html",
     "static/media/Vector.svg": "/tecktick-landingPage/static/media/Vector.0686bce803dc4d1ae527f961da369c6c.svg",
-    "main.e93df2e3.css.map": "/tecktick-landingPage/static/css/main.e93df2e3.css.map",
-    "main.f7ff267c.js.map": "/tecktick-landingPage/static/js/main.f7ff267c.js.map",
+    "main.40607233.css.map": "/tecktick-landingPage/static/css/main.40607233.css.map",
+    "main.ab034a07.js.map": "/tecktick-landingPage/static/js/main.ab034a07.js.map",
     "592.988c54fd.chunk.js.map": "/tecktick-landingPage/static/js/592.988c54fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e93df2e3.css",
-    "static/js/main.f7ff267c.js"
+    "static/css/main.40607233.css",
+    "static/js/main.ab034a07.js"
   ]
 }
